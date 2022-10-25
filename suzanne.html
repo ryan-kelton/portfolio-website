@@ -6,7 +6,7 @@
         <meta name="description" content="Responsive website redesign to improve usability">
         <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Suzanne Collins | Ryan Kelton&apos;s Portfolio</title>
+        <title>Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio</title>
         <style>
             img{
                 width: 100%;
@@ -21,7 +21,6 @@
                 <p>UX&frasl;UI Designer</p>
             </div>
             <nav>
-                <h2>Navigation</h2>
                 <ul>
                     <li>
                         <!--Hamburger Menu-->
@@ -45,11 +44,21 @@
                     <li><a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></li>
                 </ul>
             </nav>
-            <h1>Suzanne Collins&apos; Website Redesign</h1>
         </header>
         <main id="top">
+            <h1>Suzanne Collins&apos; Website Redesign</h1>
+            <!--Internal Back Button-->
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+                </svg>
+                Back
+            </a>
             <!--Project Overview-->
-            <section>
+            <header>
                 <img src="./Assets/SC-Hero.png" alt="mobile and desktop website mockup">
                 <h2>Project Overview</h2>
                 <!--Description-->
@@ -57,19 +66,19 @@
                 <!--Links to Prototype-->
                 <a href="https://xd.adobe.com/view/5b944f19-653f-4cea-b2a4-d299d0aeb6d9-0ec7/?fullscreen" target="_blank">Link to Adobe Xd desktop prototype</a> </br>
                 <a href="https://xd.adobe.com/view/8c977f10-bb24-483c-a5f4-db8895000368-d9c4/?fullscreen" target="_blank">Link to Adobe Xd mobile prototype</a>
-            </section>
-            <!--Objectives-->
-            <section>
-                <h2>Pain points</h2>
-                <ol>
-                    <li><a href="#book-order">Confusing book order</a></li>
-                    <li><a href="#info">Low quality information</a></li>
-                    <li><a href="#buying-book">Difficulty buying a book</a></li>
-                    <li><a href="#scannability">Low scannability</a></li>
-                </ol>
-            </section>
+                <!--Objectives-->
+                <section>
+                    <h2>Pain points</h2>
+                    <ol>
+                        <li><a href="#book-order">Confusing book order</a></li>
+                        <li><a href="#info">Low quality information</a></li>
+                        <li><a href="#buying-book">Difficulty buying a book</a></li>
+                        <li><a href="#scannability">Low scannability</a></li>
+                    </ol>
+                </section>
+            </header>
             <!--Book Order-->
-            <section>
+            <section id="book-order">
                 <h3>Confusing Book Order</h3>
                 <!--Original Design-->
                 <section>
@@ -92,11 +101,77 @@
                     <img src="./Assets/Suzanne/Wireframe-02.png" alt="wireframe sketches of book list page">
                 </section>
             </section>
+            <!--Low Quality Information-->
+            <section id="info">
+                <h3>Low Quality Information</h3>
+                <!--Original Design-->
+                <section>
+                    <h4>Original Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-02-Old.png" alt="centered aligned text on a book page">
+                </section>
+                <!--New Design-->
+                <section>
+                    <h4>New Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-02-New.png" alt="new organized information on a book page">
+                </section>
+                <!--Explanation-->
+                <section>
+                    <h4>Explanation</h4>
+                    <p>Based on user feedback, I added a synopsis and moved the awards below the reviews. Each review now has a link to its source for further reading.</p>
+                </section>
+                <!--Wireframes-->
+                <section>
+                    <h4>Wireframes</h4>
+                    <img src="./Assets/Suzanne/Wireframe-03.png" alt="wireframe sketch of a book page">
+                </section>
+            </section>
+            <!--Difficulty Buying A Book-->
+            <section id="buying-book">
+                <h3>Difficulty Buying A Book</h3>
+                <!--Original Design-->
+                <section>
+                    <h4>Original Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-03-Old.png" alt="quick links section on the original site">
+                </section>
+                <!--New Design-->
+                <section>
+                    <h4>New Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-03-New.png" alt="links and footer links on the new site">
+                </section>
+                <!--Explanation-->
+                <section>
+                    <h4>Explanation</h4>
+                    <p>I relocated the “quick links” to the footer and gave primary focus to the Amazon and Barnes and Noble links. These are placed under the synopsis and again under the awards on each book page.</p>
+                </section>
+            </section>
+            <!--Low Scannability-->
+            <section id="scannability">
+                <h3>Low Scannability</h3>
+                <!--Original Design-->
+                <section>
+                    <h4>Original Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-04-Old.png" alt="text with no markup">
+                </section>
+                <!--New Design-->
+                <section>
+                    <h4>New Design</h4>
+                    <img src="./Assets/Suzanne/OBJ-04-New.png" alt="organized text with markup">
+                </section>
+                <!--Explanation-->
+                <section>
+                    <h4>Explanation</h4>
+                    <p>Utilizing varying font weights and indentation I was able to improve the scannability of the information. I also turned book titles into hypertext to improve navigation.</p>
+                </section>
+            </section>
+            <!--Reflection-->
+            <section>
+                <h2>Reflection</h2>
+                <p>This was the first time I did a thorough usability evaluation and I learned a lot through the process. I discovered that you don’t need a large pool of participants to discover user pain points through site testing. I was surprised at how much I learned from watching users interact with the site.</p>
+            </section>
             <!--Top of Page Link-->
             <a href="#top">Top of Page</a>
             <!--Footer-->
             <footer>
-                <h2>Footer</h2>
                 <ul>
                     <!--LinkedIn Logo-->
                     <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
