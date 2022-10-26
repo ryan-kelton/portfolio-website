@@ -1,9 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="author" content="Ryan Kelton">
+        <meta name="description" content="Interactive website and brand identity design for Andiamo al Café">
+        <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andiamo al Café | Kelton&apos;s Portfolio</title>
+        <style>
+            img{
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        
+        <header>
+            <!--Logo and Tagline-->
+            <div>
+                <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
+                <p>UX&frasl;UI Designer</p>
+            </div>
+            <a href="#top">Skip to Main Content</a>
+            <nav>
+                <ul>
+                    <li>
+                        <!--Hamburger Menu-->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                        <!--Exit Icon-->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
+                    </li>
+                    <!--Navigation Links-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="top">
+            <!--Internal Back Button-->
+            <a href="index.html#portfolio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+                </svg>
+                Back
+            </a>
+            <!--Project Overview-->
+            <header>
+                <img 
+                    srcset="./Andiamo/Hero-600w.jpg 600w, ./Andiamo/Hero-1000w.jpg 1000w, ./Andiamo/Hero-1500w.jpg 1500w"
+                    src="./Andiamo/Hero-1000w.jpg"
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                    alt="desktop mockup of andiamo café's website">
+                <h1>Andiamo al Café</h1>
+                <h2>Project Overview</h2>
+                <!--Description-->
+                <p>Andiamo al Café is a small town coffee shop who was in need of a brand identity and online presence. After creating the logo and brand visual style I designed and developed their interactive website.</p>
+                <!--Links to Github-->
+                <a href="https://github.com/ryan-kelton/Andiamo-Cafe" target="_blank">Link to Github repository</a>
+                <a href="https://ryan-kelton.github.io/Andiamo-Cafe/" target="_blank">Link to live site on Github</a>
+            </header>
+            <!--Scope-->
+            <section>
+                <h2>Scope</h2>
+                <ol>
+                    <li><a href="#brand">Brand identity</a></li>
+                    <li><a href="#ui">User interface design</a></li>
+                    <li><a href="#interactive">Interactive website features</a></li>
+                </ol>
+            </section>
+            <!--Brand Identity-->
+            <section id="brand">
+                <h3>Brand Identity</h3>
+                <img 
+                    srcset="./Andiamo/Brand-600w.jpg 600w, ./Andiamo/Brand-1000w.jpg 1000w, ./Andiamo/Brand-1500w.jpg 1500w"
+                    src="./Andiamo/Brand-1000w.jpg" 
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                    alt="logo, font family, color scheme, packaging design and photography for andiamo">
+                <img 
+                    srcset="./Andiamo/Bags-600w.jpg 600w, ./Andiamo/Bags-1000w.jpg 1000w, ./Andiamo/Bags-1500w.jpg 1500w"
+                    src="./Andiamo/Bags-1000w.jpg" 
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                    alt="three different coffee bag designs">
+                <h4>Explanation</h4>
+                <p>Andiamo al Café&apos;s tagline is &quot;The Heart And Soul of Your Daily Life&quot;. Taking this into consideration, I created a logo that I though encapsulated their mission. The logo is in the shape of a coffee bean with a heart symbol in the center.</p>
+                <p>After the brand identity was finished I created three coffee bag mockups in Photoshop for the product display section section on the website.</p>
+            </section>
+            <!--User Interface Design-->
+            <section id="ui">
+                <h3>User Interface Design</h3>
+                <img 
+                    srcset="./Andiamo/Sketches-600w.jpg 600w, ./Andiamo/Sketches-1000w.jpg 1000w, ./Andiamo/Sketches-1500w.jpg 1500w"
+                    src="./Andiamo/Sketches-1000w.jpg" 
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                    alt="three different coffee bag designs">
+                <p>For this project I started with a simple wire-frame to outline the hierarchy and layout of the site. I then created a quick mockup with Adobe Illustrator with the text and images I planned on using in the finished site.</p>
+            </section>
+            <!--Interactive Website Features-->
+            <section id="interactive">
+                <h3>Interactive Website Features</h3>
+                <!--Product Display-->
+                <section>
+                    <h4>Product Display</h4>
+                    <img 
+                        srcset="./Andiamo/Product-600w.jpg 600w, ./Andiamo/Product-1000w.jpg 1000w, ./Andiamo/Product-1500w.jpg 1500w"
+                        src="./Andiamo/Product-1000w.jpg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                        alt="product display section on the website">
+                    <p>When the user clicks on one of the coffee roast options, the corresponding coffee bag image and description replaces the prior content.</p>
+                </section>
+                <!--Contest-->
+                <section>
+                    <h4>Contest Section</h4>
+                    <img 
+                        srcset="./Andiamo/Contest-600w.jpg 600w, ./Andiamo/Contest-1000w.jpg 1000w, ./Andiamo/Contest-1500w.jpg 1500w"
+                        src="./Andiamo/Contest-1000w.jpg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                        alt="you guessed the right number and won a free coffee">
+                    <p>The user will input a number, and if it matches the randomly generated number in JavaScript than the user wins a free coffee.</p>
+                </section>
+                <!--Contact Form With Validation-->
+                <section>
+                    <h4>Contact Form With Validation</h4>
+                    <img 
+                        srcset="./Andiamo/Contact-600w.jpg 600w, ./Andiamo/Contact-1000w.jpg 1000w, ./Andiamo/Contact-1500w.jpg 1500w"
+                        src="./Andiamo/Contact-1000w.jpg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                        alt="empty contact form with error messages">
+                    <img 
+                        srcset="./Andiamo/Contact-2-600w.jpg 600w, ./Andiamo/Contact-2-1000w.jpg 1000w, ./Andiamo/Contact-2-1500w.jpg 1500w"
+                        src="./Andiamo/Contact-2-1000w.jpg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                        alt="contact form data successfully submitted with confirmation message">
+                    <p>It was critical that the contact form have error and valid states and a confirmation message.</p>
+                </section>
+            </section>
+            <!--Reflection-->
+            <section>
+                <h2>Reflection</h2>
+                <p>I was surprised to discover how much I enjoyed writing JavaScript. This was my first project using the programming language, and I didn&apos;t know what to expect.</p>
+                <p>I found it helpful to write out my objectives before I started writing any code. This made it easier to solve the problem in manageable steps.</p>
+                <p>Looking back I think there are more efficient ways to create a product display. Although I would have to do more research to be sure. I now know a better way to create a dark mode toggle, and if I could go back I would change the way I implemented it.</p>
+            </section>
+            <!--Top of Page Link-->
+            <a href="#top">Top of Page</a>
+            <!--Footer-->
+            <footer>
+                <h2 class="text-hidden">Footer</h2>
+                <ul>
+                    <!--LinkedIn-->
+                    <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>LinkedIn
+                    </a></li>
+                    <!--Github-->
+                    <li><a href="https://github.com/ryan-kelton">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>Github
+                    </a></li>
+                    <!--Mail-->
+                    <li><a href="mailto:ryankelton@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>Email
+                    </a></li>
+                    <!--Download Resume-->
+                    <li><a href="./Assets/resume.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="20" x2="20" y2="20" />
+                        <line x1="12" y1="14" x2="12" y2="4" />
+                        <line x1="12" y1="14" x2="16" y2="10" />
+                        <line x1="12" y1="14" x2="8" y2="10" />
+                        </svg>resume.pdf
+                    </a></li>
+                </ul>
+                <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
+                <!--Footer Navigation-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                </ul>
+            </footer>
+        </main>
     </body>
 </html>

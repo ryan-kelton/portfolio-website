@@ -15,7 +15,6 @@
     </head>
     <body>
         <header>
-            <h1 class="text-hidden">Beyond Ramen</h1>
             <!--Logo and Tagline-->
             <div>
                 <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
@@ -23,7 +22,6 @@
             </div>
             <a href="#top">Skip to Main Content</a>
             <nav>
-                <h2 class="text-hidden">Navigation</h2>
                 <ul>
                     <li>
                         <!--Hamburger Menu-->
@@ -63,8 +61,10 @@
             <header>
                 <img 
                     srcset="./Beyond/Hero-600w.jpeg 600w, ./Beyond/Hero-1000w.jpeg 1000w, ./Beyond/Hero-1500w.jpeg 1500w"
-                    src="./Beyond/Hero-1000w.jpeg" 
+                    src="./Beyond/Hero-1000w.jpeg"
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
                     alt="mobile and desktop website mockup for beyond ramen's website design">
+                <h1>Beyond Ramen</h1>
                 <h2>Project Overview</h2>
                 <!--Description-->
                 <p>Beyond Ramen is a recipe sharing website for young adults seeking better food alternatives. Without any existing creative direction, they were in need of a brand visual style. Once complete, I designed and developed their responsive website prototype.</p>
@@ -90,6 +90,7 @@
                     <img 
                         srcset="./Beyond/Moodboard-600w.jpeg 600w, ./Beyond/Moodboard-1000w.jpeg 1000w, ./Beyond/Moodboard-1500w.jpeg 1500w"
                         src="./Beyond/Moodboard-1000w.jpeg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                         alt="moodboard for brand visual style">
                 </section>
                 <!--Brand Visual Style-->
@@ -98,6 +99,7 @@
                     <img
                         srcset="./Beyond/VisualStyle-600w.jpeg 600w, ./Beyond/VisualStyle-1000w.jpeg 1000w, ./Beyond/VisualStyle-1500w.jpeg 1500w"
                         src="./Beyond/VisualStyle-1000w.jpeg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                         alt="brand visual style">
                 </section>
             </section>
@@ -110,6 +112,7 @@
                     <img 
                         srcset="./Beyond/SiteMap-600w.jpeg 600w, ./Beyond/SiteMap-1000w.jpeg 1000w, ./Beyond/SiteMap-1500w.jpeg 1500w"
                         src="./Beyond/SiteMap-1000w.jpeg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                         alt="site map for beyond ramen">
                 </section>
                 <!--Sketches-->
@@ -118,6 +121,7 @@
                     <img 
                         srcset="./Beyond/Sketches-600w.jpeg 600w, ./Beyond/Sketches-1000w.jpeg 1000w, ./Beyond/Sketches-1500w.jpeg 1500w"
                         src="./Beyond/Sketches-1000w.jpeg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                         alt="sketches of mobile website">
                 </section>
                 <!--Wireframes-->
@@ -126,7 +130,8 @@
                     <p>Recipe Page</p>
                     <img 
                         srcset="./Beyond/Wireframe-600w.jpeg 600w, ./Beyond/Wireframe-1000w.jpeg 1000w, ./Beyond/Wireframe-1500w.jpeg 1500w"
-                        src="./Beyond/Wireframe-1000w.jpeg" 
+                        src="./Beyond/Wireframe-1000w.jpeg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
                         alt="wireframe for recipe page">
                 </section>
                 <!--UI Design-->
@@ -136,6 +141,7 @@
                     <img 
                         srcset="./Beyond/Wireframe-600w.jpeg 600w, ./Beyond/Wireframe-1000w.jpeg 1000w, ./Beyond/Wireframe-1500w.jpeg 1500w"
                         src="./Beyond/Recipe-1000w.jpeg" 
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                         alt="user interface design for recipe page">
                 </section>
             </section>
@@ -144,7 +150,8 @@
                 <h3>Print Styles</h3>
                 <img 
                     srcset="./Beyond/PrintStyles-600w.jpeg 600w, ./Beyond/PrintStyles-1000w.jpeg 1000w, ./Beyond/PrintStyles-1500w.jpeg 1500w"
-                    src="./Beyond/PrintStyles-1000w.jpeg" 
+                    src="./Beyond/PrintStyles-1000w.jpeg"
+                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
                     alt="print layout for recipe page">
             </section>
             <!--Reflection-->
@@ -159,7 +166,7 @@
             <footer>
                 <h2 class="text-hidden">Footer</h2>
                 <ul>
-                    <!--LinkedIn Logo-->
+                    <!--LinkedIn-->
                     <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -170,7 +177,14 @@
                         <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                         </svg>LinkedIn
                     </a></li>
-                    <!--Mail Icon-->
+                    <!--Github-->
+                    <li><a href="https://github.com/ryan-kelton">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>Github
+                    </a></li>
+                    <!--Mail-->
                     <li><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -178,8 +192,8 @@
                         <polyline points="3 7 12 13 21 7" />
                         </svg>Email
                     </a></li>
+                    <!--Download Resume-->
                     <li><a href="./Assets/resume.pdf">
-                        <!--Download Icon-->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="4" y1="20" x2="20" y2="20" />
