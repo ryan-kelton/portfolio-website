@@ -9,6 +9,7 @@
         <title>Ryan Kelton&apos;s Web Design&#x2f;Development Portfolio</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="./Stylesheets/styles.css">
+        <link rel="stylesheet" href="./Stylesheets/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
@@ -38,7 +39,7 @@
                 <path d="M10 10l4 4m0 -4l-4 4" />
                 </svg>
                 <!--Navigation Links-->
-                <ul id="mobile-nav" class="hide">
+                <ul id="main-nav" class="hide-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
@@ -53,17 +54,23 @@
         </header>
         <main id="top">
             <!--Welcome Section-->
-            <section>
-                <img src="./Assets/profile-pic.jpg" alt="ryan kelton sitting at his desk"> 
+            <section id="intro">
+                <img src="./Assets/profile-pic.jpg" alt="ryan kelton, young man with black hair sitting at his desk"> 
                 <h2>Helping People Interact With Digital Products</h2>
                 <p>Hey there, I&apos;m Ryan Kelton! I am a usability design practitioner and advocate. Check out my <a href="#portfolio">portfolio</a>, read a little <a href="about-me.html">about me</a> and send me an email.</p>
-                <a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a>
+                <a href="mailto:ryankelton@gmail.com" id="email-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="nav-email-icon" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                    </svg>ryankelton@gmail.com</a>
             </section>
             <!--Portfolio Section-->
             <section id="portfolio">
-                <h2>Portfolio</h2>
-                <div class="dec-divider"></div>
-                <!--Should I wrap the sections in <a> tags?-->
+                <div id="portfolio-divider">
+                    <h2>Portfolio</h2>
+                    <div class="dec-divider"></div>
+                </div>
                 <!--Project #1-->
                 <a href="field-house.html">
                     <section>

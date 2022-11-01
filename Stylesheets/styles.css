@@ -55,9 +55,11 @@ table {
     --electricBlue: #1485E2;
     --links: #0C5997;
     --grey: #949494;
+    --background: #FCFCFC;
 }
 html{
     color: var(--trueBlue);
+    background-color: var(--background);
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 16px;
 }
@@ -92,6 +94,7 @@ p{
 }
 img{
     width: 100%;
+    object-fit: cover;
 }
 .text-hidden{
     font-size: 0;
@@ -113,6 +116,7 @@ img{
 
 /* Global Header and Nav */
 header:first-of-type{
+    background-color: white;
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -139,13 +143,22 @@ header:first-of-type{
     padding: 10px;
 }
 /*----*/
+.hide-nav{
+    position: absolute;
+    top: -2000px;
+}
+/*----*/
 .mobile-nav-styles{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
+    border-bottom: 1px solid var(--grey);
     top: 5.2rem;
     left: 0;
+    box-shadow: -2px 85px 67px -9px rgba(0,0,0,0.13);
+    -webkit-box-shadow: -2px 85px 67px -9px rgba(0,0,0,0.13);
+    -moz-box-shadow: -2px 85px 67px -9px rgba(0,0,0,0.13);
 }
 .mobile-nav-styles li{
     padding-left: 1rem;
@@ -194,6 +207,7 @@ footer{
     margin-top: 2rem;
     padding: 1rem;
     background-image: url(../Assets/Pattern.svg);
+    background-color: white;
 }
 footer svg{
     padding-right: 10px;
