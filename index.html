@@ -3,26 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Ryan Kelton">
-        <meta name="description" content="Ryan Kelton's UX/UI Design Portfolio. Usability design practitioner and advocate, New Jersey born and based.">
+        <meta name="description" content="Ryan Kelton's UX&#x2f;UI design portfolio. Usability design practitioner and advocate, New Jersey born and based.">
         <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ryan Kelton&apos;s Web Design&#x2f;Development Portfolio</title>
+        <title>Ryan Kelton&apos;s UX&#x2f;UI Design Portfolio</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="./Stylesheets/styles.css">
         <link rel="stylesheet" href="./Stylesheets/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="canonical" href="">
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="large_summary_image">
+        <meta name="twitter:site" content="@RyanKelton4">
+        <meta name="twitter:title" content="Ryan Kelton&apos;s UX&#x2f;UI Design Portfolio">
+        <meta name="twitter:description" content="Ryan Kelton's UX&#x2f;UI design portfolio. Usability design practitioner and advocate, New Jersey born and based.">
+        <meta name="twitter:image" content="https://ryankelton.com/Assets/profile-pic.jpg">
+        <!--Open Graph-->
+        <meta property="og:title" content="Ryan Kelton&apos;s UX&#x2f;UI Design Portfolio">
+        <meta property="og:description" content="Ryan Kelton's UX&#x2f;UI design portfolio. Usability design practitioner and advocate, New Jersey born and based.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ryankelton.com">
+        <meta property="og:image" content="https://ryankelton.com/Assets/profile-pic.jpg">
     </head>
-    <body>
+    <body id="top">
         <header>
-            <h1 class="text-hidden">Ryan Kelton&apos;s Design Portfolio</h1>
+            <h1 class="text-hidden">Ryan Kelton&apos;s UX&#x2f;UI Design Portfolio</h1>
             <!--Logo and Tagline-->
             <div id="logo">
                 <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
-                <p>Web Design&#x2f;Development</p>
+                <p>UX&#x2f;UI Design</p>
             </div>
-            <a href="#top" id="skip-link">Skip to Main Content</a>
+            <a href="#main-content" id="skip-link">Skip to Main Content</a>
             <nav>
                 <h2 class="text-hidden">Navigation</h2>
                 <!--Hamburger Menu-->
@@ -48,22 +61,24 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
-                        </svg>ryankelton@gmail.com</a></li>
-                </ul>
+                        </svg><span id="email-address">ryankelton@gmail.com</span></a></li>
+                </ul>   
             </nav>
         </header>
-        <main id="top">
+        <main id="#main-content">
             <!--Welcome Section-->
             <section id="intro">
                 <img src="./Assets/profile-pic.jpg" alt="ryan kelton, young man with black hair sitting at his desk"> 
-                <h2>Helping People Interact With Digital Products</h2>
-                <p>Hey there, I&apos;m Ryan Kelton! I am a usability design practitioner and advocate. Check out my <a href="#portfolio">portfolio</a>, read a little <a href="about-me.html">about me</a> and send me an email.</p>
-                <a href="mailto:ryankelton@gmail.com" id="email-cta">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="nav-email-icon" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <polyline points="3 7 12 13 21 7" />
-                    </svg>ryankelton@gmail.com</a>
+                <div id="intro-info">
+                    <h2>Helping People Interact With Digital&nbsp;Products</h2>
+                    <p>Hey there, I&apos;m Ryan Kelton! I am a usability design practitioner and advocate. Check out my <a href="#portfolio">portfolio</a>, read a little <a href="about-me.html">about me</a> and send me an&nbsp;email.</p>
+                    <a href="mailto:ryankelton@gmail.com" id="email-cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail email-icon" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>ryankelton@gmail.com</a>
+                </div>
             </section>
             <!--Portfolio Section-->
             <section id="portfolio">
@@ -71,78 +86,80 @@
                     <h2>Portfolio</h2>
                     <div class="dec-divider"></div>
                 </div>
-                <!--Project #1-->
-                <a href="field-house.html">
-                    <section>
-                        <img 
-                            srcset="./Marlton/MFH-Hero-600w.jpeg 600w, ./Marlton/MFH-Hero-1000w.jpeg 1000w, ./Marlton/MFH-Hero-1500w.jpeg 1500w"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            src="./Marlton/MFH-Hero-1000w.jpeg"
-                            alt="mobile and desktop website mockup for marlton field house's website redesign">
-                        <h3>Marlton Field House</h3>
-                        <p>Responsive website redesign to improve usability</p>
-                    </section>
-                </a>
-                <!--Project #2-->
-                <a href="suzanne.html">
-                    <section>
-                        <img 
-                            srcset="./Suzanne/SC-Hero-600w.jpeg 600w, ./Suzanne/SC-Hero-1000w.jpeg 1000w, ./Suzanne/SC-Hero-1500w.jpeg 1500w"
-                            src="./Suzanne/SC-Hero-600w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="mobile and desktop website mockup for suzanne collins' website redesign">
-                        <h3>Suzanne Collins</h3>
-                        <p>Responsive website redesign to improve usability</p>
-                    </section>
-                </a>
-                <!--Project #3-->
-                <a href="beyond-ramen.html">
-                    <section>
-                        <img 
-                            srcset="./Beyond/Hero-600w.jpeg 600w, ./Beyond/Hero-1000w.jpeg 1000w, ./Beyond/Hero-1500w.jpeg 1500w"
-                            src="./Beyond/Hero-600w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="mobile and desktop website mockup for beyond ramen's website design">
-                        <h3>Beyond Ramen</h3>
-                        <p>Responsive website and brand identity design</p>
-                    </section>
-                </a>
-                <!--Project #4-->
-                <a href="andiamo.html">
-                    <section>
-                        <img 
-                            srcset="./Andiamo/Hero-600w.jpg 600w, ./Andiamo/Hero-1000w.jpg 1000w, ./Andiamo/Hero-1500w.jpg 1500w"
-                            src="./Andiamo/Hero-1000w.jpg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="desktop mockup of andiamo café's website">
-                        <h3>Andiamo al Café</h3>
-                        <p>Interactive website and brand identity design</p>
-                    </section>
-                </a>
-                <!--Project #5-->
-                <a href="ip-quiz.html">
-                    <section>
-                        <img 
-                            srcset="./IP/Hero-600w.jpg 600w, ./IP/Hero-1000w.jpg 1000w, ./IP/Hero-1500w.jpg 1500w"
-                            src="./IP/Hero-1000w.jpg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="intellectual property quiz mockup with all 5 screens">
-                        <h3>Intellectual Property Quiz</h3>
-                        <p>Interactive webpage quiz</p>
-                    </section>
-                </a>
-                <!--Project #6-->
-                <a href="ck-coaching.html">
-                    <section>
-                        <img 
-                            srcset="./CK/CK-Hero-600w.jpg 600w, ./CK/CK-Hero-1000w.jpg 1000w, ./CK/CK-Hero-1500w.jpg 1500w"
-                            src="./CK/CK-Hero-1000w.jpg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="ck golf coaching logo mockup">
-                        <h3>CK Golf Coaching</h3>
-                        <p>Brand identity design</p>
-                    </section>
-                </a>
+                <div id="folio-grid">
+                    <!--Project #1-->
+                    <a href="field-house.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./Marlton/MFH-Hero-600w.jpeg 600w, ./Marlton/MFH-Hero-1000w.jpeg 1000w, ./Marlton/MFH-Hero-1500w.jpeg 1500w"
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                                src="./Marlton/MFH-Hero-1000w.jpeg"
+                                alt="mobile and desktop website mockup for marlton field house's website redesign">
+                            <h3>Marlton Field House</h3>
+                            <p>Responsive website redesign to improve usability</p>
+                        </section>
+                    </a>
+                    <!--Project #2-->
+                    <a href="suzanne.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./Suzanne/SC-Hero-600w.jpeg 600w, ./Suzanne/SC-Hero-1000w.jpeg 1000w, ./Suzanne/SC-Hero-1500w.jpeg 1500w"
+                                src="./Suzanne/SC-Hero-600w.jpeg" 
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                                alt="mobile and desktop website mockup for suzanne collins' website redesign">
+                            <h3>Suzanne Collins</h3>
+                            <p>Responsive website redesign to improve usability</p>
+                        </section>
+                    </a>
+                    <!--Project #3-->
+                    <a href="beyond-ramen.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./Beyond/Hero-600w.jpeg 600w, ./Beyond/Hero-1000w.jpeg 1000w, ./Beyond/Hero-1500w.jpeg 1500w"
+                                src="./Beyond/Hero-600w.jpeg" 
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                                alt="mobile and desktop website mockup for beyond ramen's website design">
+                            <h3>Beyond Ramen</h3>
+                            <p>Responsive website and brand identity design</p>
+                        </section>
+                    </a>
+                    <!--Project #4-->
+                    <a href="andiamo.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./Andiamo/Hero-600w.jpg 600w, ./Andiamo/Hero-1000w.jpg 1000w, ./Andiamo/Hero-1500w.jpg 1500w"
+                                src="./Andiamo/Hero-1000w.jpg"
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                                alt="desktop mockup of andiamo café's website">
+                            <h3>Andiamo al Café</h3>
+                            <p>Interactive website and brand identity design</p>
+                        </section>
+                    </a>
+                    <!--Project #5-->
+                    <a href="ip-quiz.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./IP/Hero-600w.jpg 600w, ./IP/Hero-1000w.jpg 1000w, ./IP/Hero-1500w.jpg 1500w"
+                                src="./IP/Hero-1000w.jpg"
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                                alt="intellectual property quiz mockup with all 5 screens">
+                            <h3>Intellectual Property Quiz</h3>
+                            <p>Interactive webpage quiz</p>
+                        </section>
+                    </a>
+                    <!--Project #6-->
+                    <a href="ck-coaching.html" class="folio-card">
+                        <section>
+                            <img 
+                                srcset="./CK/CK-Hero-600w.jpg 600w, ./CK/CK-Hero-1000w.jpg 1000w, ./CK/CK-Hero-1500w.jpg 1500w"
+                                src="./CK/CK-Hero-1000w.jpg"
+                                sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                                alt="ck golf coaching logo mockup">
+                            <h3>CK Golf Coaching</h3>
+                            <p>Brand identity design</p>
+                        </section>
+                    </a>
+                </div>
             </section>
             <!--Top of Page Link-->
             <div id="top-page">

@@ -3,7 +3,7 @@
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
     --links: #0C5997;
-    --grey: #949494;
+    --grey: #cecece;
 }
 section h2, section h3, section p{
     margin: 0 1rem;
@@ -12,32 +12,52 @@ section h2, section h3, section p{
 /*-------------------------------------------------*/
 
 /* Welcome Section */
+#intro{
+    background-color: white;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--grey);
+}
 #intro img{
     max-height: 300px;
 }
 #intro h2{
     font-size: 2rem;
-    padding: 1rem 0 1rem 0;
+    line-height: 2.25rem;
+    padding: 2rem 0 1rem 0;
+}
+#intro h2, #intro p{
+    max-width: 600px;
+}
+/*----*/
+.email-icon{
+    padding-right: 10px;
 }
 /*----*/
 #email-cta{
     color: white;
     background-color: var(--electricBlue);
-    padding: 0.5rem;
-    margin: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 1rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 1.25rem;
+    max-width: max-content;
+}
+#email-cta:hover, #email-cta:focus{
+    background-color: var(--links);
+    font-weight: 400;
 }
 /* End Welcome Section */
 /*-------------------------------------------------*/
 
 /* Portfolio Section */
 #portfolio{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+}
+#folio-grid{
     display: grid;
     grid-template-rows: auto;
 }
@@ -49,26 +69,102 @@ section h2, section h3, section p{
 #portfolio-divider h2{
     font-size: 1.25rem;
 }
+#portfolio a{
+    text-decoration: none;
+}
+#portfolio a:hover, #portfolio a:focus{
+    font-weight: 400;
+}
+#portfolio h3{
+    margin-top: 1rem;
+    color: var(--electricBlue);
+}
+#portfolio p{
+    margin-bottom: 1.5rem;
+    color: var(--trueBlue);
+}
+.folio-card{
+    background-color: white;
+    border-bottom: 1px solid var(--grey);
+    border-top: 1px solid var(--grey);
+    margin-bottom: 2rem;
+}
+/*----*/
 .dec-divider{
     width: 100%;
     height: 2px;
     background-color: var(--trueBlue);
     flex-grow: 2;
 }
-#portfolio a{
-    text-decoration: none;
+/* End Portfolio Section */
+/*-------------------------------------------------*/
+
+/* Medium Size Screen Style Adjustments */
+@media (min-width: 600px) {
+    #intro img{
+        max-height: 500px;
+    }
+    #portfolio{
+        margin: 2rem 2rem 0;
+    }
+    #portfolio h2{
+        margin-left: 0;
+    }
+    #intro, #intro-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .folio-card{
+        border: 1px solid var(--grey);
+    }
+    .folio-card:hover, .folio-card:focus{
+        border: 1px solid var(--electricBlue);
+        box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.10);
+        -webkit-box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.10);
+        -moz-box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.10);
+    }
 }
-#portfolio h3{
-    margin-top: 1rem;
-    color: var(--trueBlue);
+/* Large Size Screen Style Adjustments */
+@media (min-width: 900px) {
+    #intro img{
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        margin-right: 2rem;
+    }
+    #intro{
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: center;
+        height: 400px;
+    }
+    #intro-info{
+        text-align: left;
+        align-items: flex-start;
+    }
+    #folio-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .folio-card{
+        margin-bottom: 0rem;
+    }
+    .folio-card img{
+        height: 15rem;
+        width: 100%;
+    }
+    #portfolio{
+        margin-bottom: 2rem;
+    }
 }
-#portfolio p{
-    margin-bottom: 1rem;
-    color: var(--trueBlue);
-}
-#portfolio a{
-    background-color: white;
-    border-bottom: 1px solid var(--grey);
-    border-top: 1px solid var(--grey);
-    margin-bottom: 2rem;
+@media (min-width: 1250px){
+    #folio-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #portfolio{
+        margin: 2rem 0;
+    }
 }

@@ -54,14 +54,18 @@ table {
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
     --links: #0C5997;
-    --grey: #949494;
-    --background: #FCFCFC;
+    --grey: #cecece;
+    --background: #f8f8f8;
 }
 html{
     color: var(--trueBlue);
-    background-color: var(--background);
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--background);
 }
 a{
     color: var(--links);
@@ -95,6 +99,10 @@ p{
 img{
     width: 100%;
     object-fit: cover;
+}
+a:hover, a:focus{
+    font-weight: 700;
+    text-decoration: underline;
 }
 .text-hidden{
     /* Credit: University of Nebraska https://wdn.unl.edu/page-title-h1-best-practices */
@@ -169,6 +177,9 @@ header:first-of-type{
 }
 .mobile-nav-styles a{
     padding: 20px 20px 20px 0;
+}
+/*----*/
+nav a{
     text-decoration: none;
 }
 /*----*/
@@ -193,7 +204,6 @@ header:first-of-type{
 /* Footer Styles */
 #top-page{
     margin: 0 auto;
-    margin-top: 2rem;
     text-align: center;
 }
 #top-page a{
@@ -239,3 +249,56 @@ footer svg{
 }
 /* End Footer Styles */
 /*-------------------------------------------------*/
+
+/* Medium Size Screen Style Adjustments */
+@media (min-width: 600px){
+    html{
+        font-size: 17px;
+    }
+    /* Header and Nav */
+    header:first-of-type{
+        padding: 1rem 2rem;
+    }
+    #hamburger-icon, #exit-icon{
+        display: none;
+    }
+    .hide-nav{
+        display: flex;
+        position: relative;
+        top: 0;
+    }
+    #email-address{
+        display: none;
+    }
+    #nav-email-icon{
+        padding: 10px;
+    }
+    #nav-email{
+        border-radius: 100px;
+    }
+    #nav-email:hover, #nav-email:focus{
+        background-color: var(--links);
+    }
+    nav li:nth-child(1), nav li:nth-child(2), nav li:nth-child(3){
+        padding-right: 20px;
+    }
+    #main-nav{
+        align-items: center;
+    }
+    /* Footer */
+    footer{
+        padding: 1rem 2rem;
+    }
+    #social-links{
+        grid-template-columns: 25% 25% 25% 25%;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+}
+/* Large Size Screen Style Adjustments */
+@media (min-width:1250px) {
+    footer{
+        border-left: 1px solid var(--grey);
+        border-right: 1px solid var(--grey);
+    }
+}

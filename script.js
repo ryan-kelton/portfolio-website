@@ -1,5 +1,7 @@
 "use strict";
 
+window.onresize = function(){ location.reload(); }
+
 // Variables
 let mobileNav = document.getElementById("main-nav");
 let hamburgerIcon = document.getElementById("hamburger-icon");
@@ -14,7 +16,6 @@ function hamburger(){
     exitIcon.classList.remove("hide");
     content.classList.add("dark-overlay");
 }
-hamburgerIcon.addEventListener("click", hamburger);
 
 // When the exit icon is clicked turn off mobile navigation styles
 function exit(){
@@ -24,4 +25,8 @@ function exit(){
     hamburgerIcon.classList.remove("hide");
     content.classList.remove("dark-overlay");
 }
+
+hamburgerIcon.addEventListener("click", hamburger);
 exitIcon.addEventListener("click", exit);
+mobileNav.addEventListener("click", exit);
+
