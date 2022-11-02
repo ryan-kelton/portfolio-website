@@ -26,7 +26,7 @@ section h2, section h3, section p{
     padding: 2rem 0 1rem 0;
 }
 #intro h2, #intro p{
-    max-width: 600px;
+    max-width: 650px;
 }
 /*----*/
 .email-icon{
@@ -104,17 +104,18 @@ section h2, section h3, section p{
     #intro img{
         max-height: 500px;
     }
-    #portfolio{
-        margin: 2rem 2rem 0;
-    }
-    #portfolio h2{
-        margin-left: 0;
-    }
     #intro, #intro-info{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    /*----*/
+    #portfolio{
+        margin: 2rem 2rem 0;
+    }
+    #portfolio h2{
+        margin-left: 0;
     }
     .folio-card{
         border: 1px solid var(--grey);
@@ -126,6 +127,8 @@ section h2, section h3, section p{
         -moz-box-shadow: 2px 2px 10px -3px rgba(0,0,0,0.10);
     }
 }
+/*-------------------------------------------------*/
+
 /* Large Size Screen Style Adjustments */
 @media (min-width: 900px) {
     #intro img{
@@ -144,6 +147,7 @@ section h2, section h3, section p{
         text-align: left;
         align-items: flex-start;
     }
+    /*----*/
     #folio-grid{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -160,6 +164,10 @@ section h2, section h3, section p{
     }
 }
 @media (min-width: 1250px){
+    #intro{
+        padding: 2rem 0;
+    }
+    /*----*/
     #folio-grid{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
@@ -168,3 +176,4 @@ section h2, section h3, section p{
         margin: 2rem 0;
     }
 }
+/*-------------------------------------------------*/

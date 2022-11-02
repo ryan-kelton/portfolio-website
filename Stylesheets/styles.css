@@ -120,11 +120,14 @@ a:hover, a:focus{
 .hide{
     display: none;
 }
+.active{
+    font-weight: 700;
+}
 /* End Global Styles */
 /*-------------------------------------------------*/
 
 /* Global Header and Nav */
-header:first-of-type{
+#main-header{
     background-color: white;
     display: flex;
     padding: 1rem;
@@ -152,11 +155,9 @@ header:first-of-type{
     padding: 10px;
 }
 /*----*/
-.hide-nav{
-    position: absolute;
-    top: -2000px;
+#main-nav{
+    display: none;
 }
-/*----*/
 .mobile-nav-styles{
     position: absolute;
     width: 100%;
@@ -183,15 +184,15 @@ nav a{
     text-decoration: none;
 }
 /*----*/
-#nav-email{
+.nav-email{
     background-color: var(--electricBlue);
 }
-#nav-email a{
+.nav-email a{
     color: white;
     display: flex;
     align-items: center;
 }
-#nav-email-icon{
+.nav-email-icon{
     padding-right: 10px;
 }
 /*----*/
@@ -256,34 +257,33 @@ footer svg{
         font-size: 17px;
     }
     /* Header and Nav */
-    header:first-of-type{
+    #main-header{
         padding: 1rem 2rem;
     }
     #hamburger-icon, #exit-icon{
         display: none;
     }
-    .hide-nav{
+    #main-nav{
         display: flex;
-        position: relative;
-        top: 0;
+        align-items: center;
+    }
+    #mobile-nav{
+        display: none;
     }
     #email-address{
         display: none;
     }
-    #nav-email-icon{
+    .nav-email-icon{
         padding: 10px;
     }
-    #nav-email{
+    .nav-email{
         border-radius: 100px;
     }
-    #nav-email:hover, #nav-email:focus{
+    .nav-email:hover, .nav-email:focus{
         background-color: var(--links);
     }
     nav li:nth-child(1), nav li:nth-child(2), nav li:nth-child(3){
         padding-right: 20px;
-    }
-    #main-nav{
-        align-items: center;
     }
     /* Footer */
     footer{
@@ -295,10 +295,16 @@ footer svg{
         margin-bottom: 0;
     }
 }
+/*-------------------------------------------------*/
+
 /* Large Size Screen Style Adjustments */
 @media (min-width:1250px) {
+    html{
+        font-size: 18px;
+    }
     footer{
         border-left: 1px solid var(--grey);
         border-right: 1px solid var(--grey);
     }
 }
+/*-------------------------------------------------*/

@@ -1,0 +1,135 @@
+/* Global Styles For Page */
+:root{
+    --trueBlue: #02204C;
+    --electricBlue: #1485E2;
+    --links: #0C5997;
+    --grey: #cecece;
+    --lightGrey: #f8f8f8;
+}
+html, body{
+    background-color: white;
+}
+#wrapper{
+    margin: 0 1rem;
+}
+h1, h2, h3, h4{
+    margin: 1rem 0 0.25rem 0;
+}
+h2, h4{
+    font-size: 1.25rem;
+}
+h3{
+    border-left: 3px solid var(--electricBlue);
+    padding-left: 10px;
+    position: relative;
+    left: -1rem;
+}
+img{
+    max-height: 600px;
+    object-fit: scale-down;
+}
+#hero-image{
+    max-height: max-content;
+    width: 100%;
+    object-fit: cover;
+}
+#wrapper ol{
+    list-style: decimal;
+    margin: 0 1rem;
+    padding-left: 0.5rem;
+}
+#wrapper li{
+    padding: 5px;
+}
+ol a{
+    text-decoration: none;
+}
+ol a:hover, ol a:focus{
+    text-decoration: underline;
+}
+p{
+    max-width: 600px;
+}
+/* End Global Styles For Page */
+/*-------------------------------------------------*/
+
+/* Back Button */
+#back{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: max-content;
+}
+/* End Back Button */
+/*-------------------------------------------------*/
+
+/* Project Overview */
+.project-link{
+    display: block;
+    padding: 0.5rem 0;
+}
+.section-break{
+    padding: 1rem 0;
+    border-bottom: 1.5px solid var(--trueBlue);
+}
+#reflection h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-left: 3px solid var(--electricBlue);
+    padding-left: 10px;
+    position: relative;
+    left: -1rem;
+    margin-bottom: 0.5rem;
+}
+#reflection p{
+    margin-top: 0.5rem;
+}
+#project-overview p{
+    margin-bottom: 0.5rem;
+}
+#project-overview{
+    padding-top: 0;
+}
+.explanation{
+    margin-bottom: 2rem;
+}
+.explanation h4{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1rem;
+}
+/* End Project Overview */
+/*-------------------------------------------------*/
+
+#top-page{
+    margin-top: 1rem;
+}
+
+/* Media Query */
+@media (min-width: 600px){
+    #back{
+        padding: 1rem 2rem;
+    }
+    #wrapper{
+        margin: 0 2rem;
+    }
+    .explanation{
+        background-color: var(--lightGrey);
+        padding: 2rem;
+        margin: 1rem 0;
+    }
+    .explanation p{
+        max-width: 600px;
+    }
+    .explanation h4{
+        margin: 0;
+    }
+}
+@media (min-width: 1200px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
