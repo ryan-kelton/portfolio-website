@@ -163,7 +163,7 @@ section h2, section h3, section p{
         margin-bottom: 2rem;
     }
 }
-@media (min-width: 1250px){
+@media (min-width: 1500px){
     #intro{
         padding: 2rem 0;
     }

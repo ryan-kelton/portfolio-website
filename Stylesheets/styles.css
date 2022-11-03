@@ -61,11 +61,8 @@ html{
     color: var(--trueBlue);
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 16px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
-}
-body{
-    background-color: var(--background);
 }
 a{
     color: var(--links);
@@ -305,6 +302,22 @@ footer svg{
     footer{
         border-left: 1px solid var(--grey);
         border-right: 1px solid var(--grey);
+    }
+    #footer-nav{
+        margin-top: 0;
+    }
+    #small-nav{
+        display: flex;
+        align-items: center;
+    }
+    small{
+        flex-grow: 2;
+    }
+}
+
+@media (min-width: 1700px){
+    html{
+        font-size: 20px;
     }
 }
 /*-------------------------------------------------*/

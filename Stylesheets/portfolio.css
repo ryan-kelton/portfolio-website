@@ -3,43 +3,25 @@
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
     --links: #0C5997;
+    --darkGrey: #474747;
     --grey: #cecece;
     --lightGrey: #f8f8f8;
 }
 html, body{
     background-color: white;
 }
-#wrapper{
-    margin: 0 1rem;
-}
 h1, h2, h3, h4{
-    margin: 1rem 0 0.25rem 0;
+    margin: 1rem 0 0.35rem 0;
 }
-h2, h4{
+h2{
     font-size: 1.25rem;
 }
-h3{
-    border-left: 3px solid var(--electricBlue);
-    padding-left: 10px;
-    position: relative;
-    left: -1rem;
-}
-img{
-    max-height: 600px;
-    object-fit: scale-down;
-}
-#hero-image{
-    max-height: max-content;
-    width: 100%;
-    object-fit: cover;
-}
-#wrapper ol{
-    list-style: decimal;
-    margin: 0 1rem;
-    padding-left: 0.5rem;
-}
-#wrapper li{
-    padding: 5px;
+h4{
+    font-size: 1rem;
+    color: var(--darkGrey);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 ol a{
     text-decoration: none;
@@ -48,88 +30,120 @@ ol a:hover, ol a:focus{
     text-decoration: underline;
 }
 p{
-    max-width: 600px;
+    max-width: 65ch;
 }
 /* End Global Styles For Page */
 /*-------------------------------------------------*/
 
-/* Back Button */
+/*-------------------------------------------------*/
 #back{
     display: flex;
     align-items: center;
     padding: 1rem;
     width: max-content;
 }
-/* End Back Button */
-/*-------------------------------------------------*/
-
-/* Project Overview */
+/* project overview text */
+.text{
+    margin: 1rem;
+}
+#project-overview ol{
+    list-style: decimal;
+    margin: 0 1rem;
+    padding-left: 0.5rem;
+}
+#project-overview li{
+    padding: 5px;
+}
+#project-overview p{
+    margin-bottom: 1rem;
+}
 .project-link{
     display: block;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
-.section-break{
-    padding: 1rem 0;
-    border-bottom: 1.5px solid var(--trueBlue);
+/* design solution text */
+.explanation{
+    background-color: var(--lightGrey);
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    max-width: max-content;
 }
-#reflection h2{
-    font-size: 1.75rem;
+.explanation h4{
+    margin: 0 0 0.35rem 0;
     font-weight: 700;
+    color: var(--trueBlue);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+/* set left and right margin on case study, after project overview */
+#wrapper{
+    margin: 0 1rem;
+}
+
+/* add divider in between sections */
+.section-break{
+    border-bottom: 1.5px solid var(--grey);
+}
+.section-break h3{
+    margin-top: 2rem;
+}
+/* blue side bar on headers */
+.special{
     border-left: 3px solid var(--electricBlue);
     padding-left: 10px;
     position: relative;
     left: -1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 1rem;
+}
+h3+p{
+    margin: 0 1rem;
+    padding-top: 5px;
+}
+#reflection{
+    margin: 2rem 0;
+}
+#reflection h2{
+    margin-bottom: 1rem;
 }
 #reflection p{
-    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-left: 13px;
 }
-#project-overview p{
-    margin-bottom: 0.5rem;
-}
-#project-overview{
-    padding-top: 0;
-}
-.explanation{
-    margin-bottom: 2rem;
-}
-.explanation h4{
-    font-size: 1.25rem;
-}
-h4{
-    font-size: 1rem;
-}
-/* End Project Overview */
-/*-------------------------------------------------*/
 
-#top-page{
-    margin-top: 1rem;
+.download{
+    display: flex;
+    align-items: center;
 }
+.download svg{
+    padding-right: 10px;
+}
+
+/*-------------------------------------------------*/
 
 /* Media Query */
 @media (min-width: 600px){
-    #back{
-        padding: 1rem 2rem;
+    .text{
+        margin: 2rem;
+    }
+    .explanation{
+        padding: 2rem;
     }
     #wrapper{
         margin: 0 2rem;
     }
-    .explanation{
-        background-color: var(--lightGrey);
-        padding: 2rem;
-        margin: 1rem 0;
+}
+/*-------------------------------------------------*/
+@media (min-width: 800px){
+    .text{
+        margin: 2rem auto;
+        max-width: 65ch;
     }
-    .explanation p{
-        max-width: 600px;
-    }
-    .explanation h4{
-        margin: 0;
+    #wrapper{
+        margin: 0 auto;
+        max-width: 65ch;
     }
 }
-@media (min-width: 1200px){
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-}
+/*-------------------------------------------------*/
