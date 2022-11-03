@@ -44,7 +44,7 @@ p{
 }
 /* project overview text */
 .text{
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
 }
 #project-overview ol{
     list-style: decimal;
@@ -84,6 +84,7 @@ p{
 /* add divider in between sections */
 .section-break{
     border-bottom: 1.5px solid var(--grey);
+    padding-bottom: 2rem;
 }
 .section-break h3{
     margin-top: 2rem;
@@ -126,7 +127,7 @@ h3+p{
 /* Media Query */
 @media (min-width: 600px){
     .text{
-        margin: 2rem;
+        margin: 2rem 2rem 0 2rem;
     }
     .explanation{
         padding: 2rem;
@@ -138,7 +139,7 @@ h3+p{
 /*-------------------------------------------------*/
 @media (min-width: 800px){
     .text{
-        margin: 2rem auto;
+        margin: 2rem auto 0 auto;
         max-width: 65ch;
     }
     #wrapper{
@@ -147,3 +148,8 @@ h3+p{
     }
 }
 /*-------------------------------------------------*/
+@media (min-width: 1700px){
+    #back{
+        padding-left: 0;
+    }
+}

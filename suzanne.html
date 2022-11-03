@@ -7,48 +7,79 @@
         <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio</title>
-        <style>
-            img{
-                width: 100%;
-            }
-        </style>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./Stylesheets/styles.css">
+        <link rel="stylesheet" href="./Stylesheets/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="canonical" href="">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="large_summary_image">
+        <meta name="twitter:site" content="@RyanKelton4">
+        <!--Open Graph-->
+        <meta property="og:title" content="Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio">
+        <meta property="og:description" content="Responsive website redesign for Suzanne Collins. The focus was to improve usability.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ryankelton.com/suzanne.html">
+        <meta property="og:image" content="https://ryankelton.com/Suzanne/SC-Hero-1000w.jpeg">
     </head>
-    <body>
-        <header>
+    <body id="top">
+        <header id="main-header">
             <!--Logo and Tagline-->
-            <div>
-                <img src="./Assets/LogoType.svg" alt="ryan kelton wordmark">
-                <p>UX&frasl;UI Designer</p>
+            <div id="logo">
+                <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
+                <p>UX&#x2f;UI Design</p>
             </div>
-            <a href="#top">Skip to Main Content</a>
+            <a href="#main-content" id="skip-link">Skip to Main Content</a>
             <nav>
-                <ul>
-                    <li>
-                        <!--Hamburger Menu-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="4" y1="6" x2="20" y2="6" />
-                        <line x1="4" y1="12" x2="20" y2="12" />
-                        <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                        <!--Exit Icon-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M10 10l4 4m0 -4l-4 4" />
-                        </svg>
-                    </li>
-                    <!--Navigation Links-->
+                <!--Hamburger Menu-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="hamburger-icon" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <!--Exit Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="exit-icon" class="icon icon-tabler icon-tabler-circle-x hide" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M10 10l4 4m0 -4l-4 4" />
+                </svg>
+                <!--Navigation Links-->
+                <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
-                    <li><a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></li>
-                </ul>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg><span class="text-hidden">ryankelton@gmail.com</span></a></li>
+                </ul> 
+                <!--Mobile Navigation Links-->
+                <ul id="mobile-nav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>ryankelton@gmail.com</a></li>
+                </ul>  
             </nav>
         </header>
-        <main id="top">
+        <main id="main-content">
             <!--Internal Back Button-->
-            <a href="index.html#portfolio">
+            <a href="index.html#portfolio" id="back">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -58,169 +89,169 @@
                 Back
             </a>
             <!--Project Overview-->
-            <header>
-                <img 
-                    srcset="./Suzanne/SC-Hero-600w.jpeg 600w, ./Suzanne/SC-Hero-1000w.jpeg 1000w, ./Suzanne/SC-Hero-1500w.jpeg 1500w"
-                    src="./Suzanne/SC-Hero-1000w.jpeg" 
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                    alt="mobile and desktop website mockup">
-                <h1>Suzanne Collins&apos; Website Redesign</h1>
-                <h2>Project Overview</h2>
-                <!--Description-->
-                <p>Author of The Hunger Games, Suzanne Collins needed help with her website. After conducting a usability evaluation, and site testing I constructed a working prototype for desktop and mobile devices that solved user pain points.</p>
-                <!--Links to Prototype-->
-                <a href="https://xd.adobe.com/view/5b944f19-653f-4cea-b2a4-d299d0aeb6d9-0ec7/?fullscreen" target="_blank">Link to Adobe Xd desktop prototype</a> </br>
-                <a href="https://xd.adobe.com/view/8c977f10-bb24-483c-a5f4-db8895000368-d9c4/?fullscreen" target="_blank">Link to Adobe Xd mobile prototype</a>
-                <!--Objectives-->
-                <section>
-                    <h2>Pain points</h2>
-                    <ol>
-                        <li><a href="#book-order">Confusing book order</a></li>
-                        <li><a href="#info">Low quality information</a></li>
-                        <li><a href="#buying-book">Difficulty buying a book</a></li>
-                        <li><a href="#scannability">Low scannability</a></li>
-                    </ol>
-                </section>
+            <header id="project-overview" class="section-break">
+                <img src="./Suzanne/SC-Hero-4000w.webp" alt="mobile and desktop website mockup">
+                <div class="text">
+                    <h1>Suzanne Collins&apos; Website Redesign</h1>
+                    <h2>Project Overview</h2>
+                    <!--Description-->
+                    <p>Author of The Hunger Games, Suzanne Collins needed help with her website. After conducting a usability evaluation, and site testing I constructed a working prototype for desktop and mobile devices that solved user pain points.</p>
+                    <!--Links to Prototype-->
+                    <a href="https://xd.adobe.com/view/5b944f19-653f-4cea-b2a4-d299d0aeb6d9-0ec7/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd desktop prototype</a>
+                    <a href="https://xd.adobe.com/view/8c977f10-bb24-483c-a5f4-db8895000368-d9c4/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd mobile prototype</a>
+                    <!--Objectives-->
+                    <section>
+                        <h2>Pain points</h2>
+                        <ol>
+                            <li><a href="#book-order">Confusing book order</a></li>
+                            <li><a href="#info">Low quality information</a></li>
+                            <li><a href="#buying-book">Difficulty buying a book</a></li>
+                            <li><a href="#scannability">Low scannability</a></li>
+                        </ol>
+                    </section>
+                </div>
             </header>
-            <!--Book Order-->
-            <section id="book-order">
-                <h3>Confusing Book Order</h3>
-                <!--Original Design-->
-                <section>
-                    <h4>Original Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-01-Old-600w.jpeg 600w, ./Suzanne/OBJ-01-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-01-Old-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-01-Old-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="original book order on collins' website">
+            <div id="wrapper">
+                <!--Book Order-->
+                <section id="book-order" class="section-break">
+                    <h3 class="special">01. Confusing Book Order</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Design Solution</h4>
+                        <p>I organized the books into three categories: The Hunger Games, The Underland Chronicles, and Picture Books. I also included the book number, and publication date with the book title.</p>
+                    </section>
+                    <!--Original Design-->
+                    <section>
+                        <h4>Original Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-01-Old-600w.jpeg 600w, ./Suzanne/OBJ-01-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-01-Old-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-01-Old-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="original book order on collins' website">
+                    </section>
+                    <!--New Design-->
+                    <section>
+                        <h4>New Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-01-New-600w.jpeg 600w, ./Suzanne/OBJ-01-New-1000w.jpeg 1000w, ./Suzanne/OBJ-01-New-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-01-New-1000w.jpeg"
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                            alt="new organized book order">
+                    </section>
+                    <!--Wireframes-->
+                    <section>
+                        <h4>Wireframes</h4>
+                        <img 
+                            srcset="./Suzanne/Wireframe-02-600w.jpeg 600w, ./Suzanne/Wireframe-02-1000w.jpeg 1000w, ./Suzanne/Wireframe-02-1500w.jpeg 1500w"
+                            src="./Suzanne/Wireframe-02-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="wireframe sketches of book list page">
+                    </section>
                 </section>
-                <!--New Design-->
-                <section>
-                    <h4>New Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-01-New-600w.jpeg 600w, ./Suzanne/OBJ-01-New-1000w.jpeg 1000w, ./Suzanne/OBJ-01-New-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-01-New-1000w.jpeg"
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                        alt="new organized book order">
+                <!--Low Quality Information-->
+                <section id="info" class="section-break">
+                    <h3 class="special">02. Low Quality Information</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Design Solution</h4>
+                        <p>Based on user feedback, I added a synopsis and moved the awards below the reviews. Each review now has a link to its source for further reading.</p>
+                    </section>
+                    <!--Original Design-->
+                    <section>
+                        <h4>Original Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-02-Old-600w.jpeg 600w, ./Suzanne/OBJ-02-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-02-Old-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-02-Old-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="centered aligned text on a book page">
+                    </section>
+                    <!--New Design-->
+                    <section>
+                        <h4>New Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-02-New-600w.jpeg 600w, ./Suzanne/OBJ-02-New-1000w.jpeg 1000w, ./Suzanne/OBJ-02-New-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-02-New-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="new organized information on a book page">
+                    </section>
+                    <!--Wireframes-->
+                    <section>
+                        <h4>Wireframes</h4>
+                        <img 
+                            srcset="./Suzanne/Wireframe-03-600w.jpeg 600w, ./Suzanne/Wireframe-03-1000w.jpeg 1000w, ./Suzanne/Wireframe-03-1500w.jpeg 1500w"
+                            src="./Suzanne/Wireframe-03-1000w.jpeg"
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="wireframe sketch of a book page">
+                    </section>
                 </section>
-                <!--Explanation-->
-                <section>
-                    <h4>Explanation</h4>
-                    <p>I organized the books into three categories: The Hunger Games, The Underland Chronicles, and Picture Books. I also included the book number, and publication date with the book title.</p>
+                <!--Difficulty Buying A Book-->
+                <section id="buying-book" class="section-break">
+                    <h3 class="special">03. Difficulty Buying A Book</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Design Solution</h4>
+                        <p>I relocated the “quick links” to the footer and gave primary focus to the Amazon and Barnes and Noble links. These are placed under the synopsis and again under the awards on each book page.</p>
+                    </section>
+                    <!--Original Design-->
+                    <section>
+                        <h4>Original Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-03-Old-600w.jpeg 600w, ./Suzanne/OBJ-03-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-03-Old-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-03-Old-1000w.jpeg"
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="quick links section on the original site">
+                    </section>
+                    <!--New Design-->
+                    <section>
+                        <h4>New Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-03-New-600w.jpeg 600w, ./Suzanne/OBJ-03-New-1000w.jpeg 1000w, ./Suzanne/OBJ-03-New-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-03-New-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="links and footer links on the new site">
+                    </section>
                 </section>
-                <!--Wireframes-->
-                <section>
-                    <h4>Wireframes</h4>
-                    <img 
-                        srcset="./Suzanne/Wireframe-02-600w.jpeg 600w, ./Suzanne/Wireframe-02-1000w.jpeg 1000w, ./Suzanne/Wireframe-02-1500w.jpeg 1500w"
-                        src="./Suzanne/Wireframe-02-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="wireframe sketches of book list page">
+                <!--Low Scannability-->
+                <section id="scannability" class="section-break">
+                    <h3 class="special">04. Low Scannability</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Design Solution</h4>
+                        <p>Utilizing varying font weights and indentation I was able to improve the scannability of the information. I also turned book titles into hypertext to improve navigation.</p>
+                    </section>
+                    <!--Original Design-->
+                    <section>
+                        <h4>Original Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-04-Old-600w.jpeg 600w, ./Suzanne/OBJ-04-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-04-Old-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-04-Old-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="text with no markup">
+                    </section>
+                    <!--New Design-->
+                    <section>
+                        <h4>New Design</h4>
+                        <img 
+                            srcset="./Suzanne/OBJ-04-New-600w.jpeg 600w, ./Suzanne/OBJ-04-New-1000w.jpeg 1000w, ./Suzanne/OBJ-04-New-1500w.jpeg 1500w"
+                            src="./Suzanne/OBJ-04-New-1000w.jpeg" 
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
+                            alt="organized text with markup">
+                    </section>
                 </section>
-            </section>
-            <!--Low Quality Information-->
-            <section id="info">
-                <h3>Low Quality Information</h3>
-                <!--Original Design-->
-                <section>
-                    <h4>Original Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-02-Old-600w.jpeg 600w, ./Suzanne/OBJ-02-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-02-Old-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-02-Old-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="centered aligned text on a book page">
+                <!--Reflection-->
+                <section id="reflection">
+                    <h2 class="special">Reflection</h2>
+                    <p>This was the first time I did a thorough usability evaluation and I learned a lot through the process. I discovered that you don’t need a large pool of participants to discover user pain points through site testing. I was surprised at how much I learned from watching users interact with the site.</p>
                 </section>
-                <!--New Design-->
-                <section>
-                    <h4>New Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-02-New-600w.jpeg 600w, ./Suzanne/OBJ-02-New-1000w.jpeg 1000w, ./Suzanne/OBJ-02-New-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-02-New-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="new organized information on a book page">
-                </section>
-                <!--Explanation-->
-                <section>
-                    <h4>Explanation</h4>
-                    <p>Based on user feedback, I added a synopsis and moved the awards below the reviews. Each review now has a link to its source for further reading.</p>
-                </section>
-                <!--Wireframes-->
-                <section>
-                    <h4>Wireframes</h4>
-                    <img 
-                        srcset="./Suzanne/Wireframe-03-600w.jpeg 600w, ./Suzanne/Wireframe-03-1000w.jpeg 1000w, ./Suzanne/Wireframe-03-1500w.jpeg 1500w"
-                        src="./Suzanne/Wireframe-03-1000w.jpeg"
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="wireframe sketch of a book page">
-                </section>
-            </section>
-            <!--Difficulty Buying A Book-->
-            <section id="buying-book">
-                <h3>Difficulty Buying A Book</h3>
-                <!--Original Design-->
-                <section>
-                    <h4>Original Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-03-Old-600w.jpeg 600w, ./Suzanne/OBJ-03-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-03-Old-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-03-Old-1000w.jpeg"
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="quick links section on the original site">
-                </section>
-                <!--New Design-->
-                <section>
-                    <h4>New Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-03-New-600w.jpeg 600w, ./Suzanne/OBJ-03-New-1000w.jpeg 1000w, ./Suzanne/OBJ-03-New-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-03-New-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="links and footer links on the new site">
-                </section>
-                <!--Explanation-->
-                <section>
-                    <h4>Explanation</h4>
-                    <p>I relocated the “quick links” to the footer and gave primary focus to the Amazon and Barnes and Noble links. These are placed under the synopsis and again under the awards on each book page.</p>
-                </section>
-            </section>
-            <!--Low Scannability-->
-            <section id="scannability">
-                <h3>Low Scannability</h3>
-                <!--Original Design-->
-                <section>
-                    <h4>Original Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-04-Old-600w.jpeg 600w, ./Suzanne/OBJ-04-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-04-Old-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-04-Old-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="text with no markup">
-                </section>
-                <!--New Design-->
-                <section>
-                    <h4>New Design</h4>
-                    <img 
-                        srcset="./Suzanne/OBJ-04-New-600w.jpeg 600w, ./Suzanne/OBJ-04-New-1000w.jpeg 1000w, ./Suzanne/OBJ-04-New-1500w.jpeg 1500w"
-                        src="./Suzanne/OBJ-04-New-1000w.jpeg" 
-                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                        alt="organized text with markup">
-                </section>
-                <!--Explanation-->
-                <section>
-                    <h4>Explanation</h4>
-                    <p>Utilizing varying font weights and indentation I was able to improve the scannability of the information. I also turned book titles into hypertext to improve navigation.</p>
-                </section>
-            </section>
-            <!--Reflection-->
-            <section>
-                <h2>Reflection</h2>
-                <p>This was the first time I did a thorough usability evaluation and I learned a lot through the process. I discovered that you don’t need a large pool of participants to discover user pain points through site testing. I was surprised at how much I learned from watching users interact with the site.</p>
-            </section>
+            </div>
             <!--Top of Page Link-->
             <a href="#top">Top of Page</a>
             <!--Footer-->
             <footer>
                 <h2 class="text-hidden">Footer</h2>
-                <ul>
+                <ul id="social-links">
                     <!--LinkedIn-->
-                    <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -231,14 +262,14 @@
                         </svg>LinkedIn
                     </a></li>
                     <!--Github-->
-                    <li><a href="https://github.com/ryan-kelton">
+                    <li id="github"><a href="https://github.com/ryan-kelton">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>Github
                     </a></li>
                     <!--Mail-->
-                    <li><a href="mailto:ryankelton@gmail.com">
+                    <li id="email"><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -246,7 +277,7 @@
                         </svg>Email
                     </a></li>
                     <!--Download Resume-->
-                    <li><a href="./Assets/resume.pdf">
+                    <li id="resume"><a href="./Assets/resume.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="4" y1="20" x2="20" y2="20" />
@@ -256,13 +287,15 @@
                         </svg>resume.pdf
                     </a></li>
                 </ul>
-                <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
-                <!--Footer Navigation-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about-me.html">About Me</a></li>
-                </ul>
+                <div id="small-nav">
+                    <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
+                    <!--Footer Navigation-->
+                    <ul id="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                    </ul>
+                </div>
             </footer>
         </main>
     </body>

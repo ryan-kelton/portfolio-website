@@ -315,5 +315,8 @@ footer svg{
     html{
         font-size: 20px;
     }
+    #main-header{
+        padding: 1rem 0;
+    }
 }
 /*-------------------------------------------------*/
