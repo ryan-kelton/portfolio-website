@@ -26,7 +26,7 @@ section h2, section h3, section p{
     padding: 2rem 0 1rem 0;
 }
 #intro h2, #intro p{
-    max-width: 650px;
+    max-width: 36.5rem;
 }
 /*----*/
 .email-icon{
@@ -37,13 +37,13 @@ section h2, section h3, section p{
     color: white;
     background-color: var(--electricBlue);
     padding: 0.5rem 1rem;
-    margin: 1rem 1rem 0 1rem;
-    border-radius: 10px;
+    margin: 1.5rem 1rem 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--links);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 1.25rem;
     max-width: max-content;
 }
 #email-cta:hover, #email-cta:focus{

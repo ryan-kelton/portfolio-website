@@ -113,11 +113,11 @@ h3+p{
     padding-left: 13px;
 }
 
-.download{
+.open-wireframes{
     display: flex;
     align-items: center;
 }
-.download svg{
+.open-wireframes svg{
     padding-right: 10px;
 }
 

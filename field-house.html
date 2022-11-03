@@ -57,23 +57,23 @@
                     <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
                     <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
-                        </svg><span id="email-address">ryankelton@gmail.com</span></a></li>
+                        </svg><span class="text-hidden">ryankelton@gmail.com</span></a></li>
                 </ul> 
                 <!--Mobile Navigation Links-->
                 <ul id="mobile-nav" class="hide">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
-                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
-                        </svg><span id="email-address">ryankelton@gmail.com</span></a></li>
+                        </svg>ryankelton@gmail.com</a></li>
                 </ul>  
             </nav>
         </header>
@@ -138,15 +138,6 @@
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="new leagues page">
                     </section>
-                    <!--Wireframes-->
-                    <section>
-                        <h4>Wireframes</h4>
-                        <img class="wireframes"
-                            srcset="./Marlton/Wireframes-01-600w.jpeg 600w, ./Marlton/Wireframes-01-1000w.jpeg 1000w, ./Marlton/Wireframes-01-1500w.jpg 1500w"
-                            src="./Marlton/Wireframes-01-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="wireframe sketches for navigation issues on league page">
-                    </section>
                 </section>
                 <!--Content and Writing-->
                 <section id="content-writing" class="section-break">
@@ -174,15 +165,6 @@
                             src="./Marlton/OBJ-02-New-1000w.jpeg" 
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="new rentals page with organized content">
-                    </section>
-                    <!--Wireframes-->
-                    <section>
-                        <h4>Wireframes</h4>
-                        <img 
-                            srcset="./Marlton/Wireframes-02-600w.jpeg 600w, ./Marlton/Wireframes-02-1000w.jpeg 1000w, ./Marlton/Wireframes-02-1500w.jpg 1500w"
-                            src="./Marlton/Wireframes-02-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="wireframe sketches for rentals page">
                     </section>
                 </section>
                 <!--Visual Design-->
@@ -212,21 +194,16 @@
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="old birthday parties page with visual design issues">
                     </section>
-                    <!--Wireframes-->
-                    <section>
-                        <h4>Wireframes</h4>
-                        <img 
-                            srcset="./Marlton/Wireframes-03-600w.jpeg 600w, ./Marlton/Wireframes-03-1000w.jpeg 1000w, ./Marlton/Wireframes-03-1500w.jpg 1500w"
-                            src="./Marlton/Wireframes-03-1000w.jpeg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="wireframe sketches for birthday parties page">
-                    </section>
                 </section>
                 <!--Wireframes-->
                 <section>
                     <h2>Wireframes</h2>
-                    <a href="./Marlton/Marlton-Wireframes.pdf" class="download">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="4" y1="20" x2="20" y2="20" /><line x1="12" y1="14" x2="12" y2="4" /><line x1="12" y1="14" x2="16" y2="10" /><line x1="12" y1="14" x2="8" y2="10" /></svg>
+                    <a href="./Marlton/Marlton-Wireframes.pdf" class="open-wireframes">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                            <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                          </svg>
                         Open Wireframes PDF(1.5MB)</a>
                 </section>
                 <!--Reflection-->
@@ -288,7 +265,7 @@
                     <!--Footer Navigation-->
                     <ul id="footer-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
                         <li><a href="about-me.html">About Me</a></li>
                     </ul>
                 </div>

@@ -68,7 +68,7 @@ a{
     color: var(--links);
 }
 a:hover, a:focus{
-    text-decoration: underline;
+    color: var(--electricBlue);
 }
 h1{
     font-size: 2rem;
@@ -97,10 +97,6 @@ img{
     width: 100%;
     object-fit: cover;
 }
-a:hover, a:focus{
-    font-weight: 700;
-    text-decoration: underline;
-}
 .text-hidden{
     /* Credit: University of Nebraska https://wdn.unl.edu/page-title-h1-best-practices */
     font-size: 0;
@@ -119,6 +115,7 @@ a:hover, a:focus{
 }
 .active{
     font-weight: 700;
+    color: var(--electricBlue);
 }
 /* End Global Styles */
 /*-------------------------------------------------*/
@@ -177,10 +174,6 @@ a:hover, a:focus{
     padding: 20px 20px 20px 0;
 }
 /*----*/
-nav a{
-    text-decoration: none;
-}
-/*----*/
 .nav-email{
     background-color: var(--electricBlue);
 }
@@ -191,6 +184,9 @@ nav a{
 }
 .nav-email-icon{
     padding-right: 10px;
+}
+#mobile-email{
+    text-decoration: none;
 }
 /*----*/
 #hamburger-icon, #exit-icon{
