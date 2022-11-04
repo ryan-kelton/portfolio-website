@@ -295,10 +295,6 @@ footer svg{
     html{
         font-size: 18px;
     }
-    footer{
-        border-left: 1px solid var(--grey);
-        border-right: 1px solid var(--grey);
-    }
     #footer-nav{
         margin-top: 0;
     }
@@ -317,6 +313,10 @@ footer svg{
     }
     #main-header{
         padding: 1rem 0;
+    }
+    footer{
+        border-left: 1px solid var(--grey);
+        border-right: 1px solid var(--grey);
     }
 }
 /*-------------------------------------------------*/

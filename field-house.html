@@ -54,7 +54,7 @@
                 <!--Navigation Links-->
                 <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
                     <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -66,7 +66,7 @@
                 <!--Mobile Navigation Links-->
                 <ul id="mobile-nav" class="hide">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
                     <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -90,7 +90,7 @@
             </a>
             <!--Project Overview-->
             <header id="project-overview" class="section-break">
-                <img src="./Marlton/MFH-Hero-4000w.webp" alt="mobile and desktop website mockup">
+                <img src="./Marlton/MFH-Hero-4000w.webp" alt="mobile and desktop website mockup" id="hero-image">
                 <div class="text">
                     <h1>Marlton Field House Website Redesign</h1>
                     <h2>Project Overview</h2>
@@ -110,9 +110,9 @@
                     </section>
                 </div>
             </header>
-            <div id="wrapper">
-                <!--Navigation-->
-                <section id="navigation" class="section-break">
+            <!--Navigation-->
+            <section id="navigation" class="section-break">
+                <div class="wrapper">
                     <h3 class="special">01. Improve Navigation</h3>
                     <p>Example from &quot;Leagues&quot; page</p>
                     <!--Explanation-->
@@ -120,6 +120,8 @@
                         <h4>Design Solution</h4>
                         <p>The original design hid league sign up buttons and information in a carousel. I removed the carousel, organized the information with headers and bullet points, and made all links and buttons red. I added the newsletter signup form so users can receive updates when league registration, or open spots are available.</p>
                     </section>
+                </div>
+                <div class="image-grid">
                     <!--Original Design-->
                     <section>
                         <h4>Original Design</h4>
@@ -138,9 +140,11 @@
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="new leagues page">
                     </section>
-                </section>
-                <!--Content and Writing-->
-                <section id="content-writing" class="section-break">
+                </div> 
+            </section>
+            <!--Content and Writing-->
+            <section id="content-writing" class="section-break">
+                <div class="wrapper">
                     <h3 class="special">02. Content and Writing</h3>
                     <p>Example from &quot;Rentals&quot; page</p>
                     <!--Explanation-->
@@ -148,6 +152,8 @@
                         <h4>Design Solution</h4>
                         <p>One of the biggest user complaints was the lack of useful information. After reorganizing the rental content into four sections, I added previously missing rental information such as auditorium capacity.</p>
                     </section>
+                </div>
+                <div class="image-grid">
                     <!--Original Design-->
                     <section>
                         <h4>Original Design</h4>
@@ -166,9 +172,11 @@
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="new rentals page with organized content">
                     </section>
-                </section>
-                <!--Visual Design-->
-                <section id="visual" class="section-break">
+                </div>
+            </section>
+            <!--Visual Design-->
+            <section id="visual" class="section-break">
+                <div class="wrapper">
                     <h3 class="special">03. Visual Design</h3>
                     <p>Example from &quot;Birthday Parties&quot; page</p>
                     <!--Explanation-->
@@ -176,6 +184,8 @@
                         <h4>Design Solution</h4>
                         <p>In the original design there was a lot of center aligned text, which was hard to read. There was also an excessive amount of negative space in some places. After organizing the content, and utilizing good design principles I was able to achieve a more efficient and beautiful layout.</p>
                     </section>
+                </div>
+                <div class="image-grid">
                     <!--Original Design-->
                     <section>
                         <h4>Original Design</h4>
@@ -194,16 +204,18 @@
                             sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
                             alt="old birthday parties page with visual design issues">
                     </section>
-                </section>
+                </div>
+            </section>
+            <div class="wrapper">
                 <!--Wireframes-->
-                <section>
+                <section id="wireframes">
                     <h2>Wireframes</h2>
                     <a href="./Marlton/Marlton-Wireframes.pdf" class="open-wireframes">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
                             <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                          </svg>
+                            </svg>
                         Open Wireframes PDF(1.5MB)</a>
                 </section>
                 <!--Reflection-->
@@ -265,7 +277,7 @@
                     <!--Footer Navigation-->
                     <ul id="footer-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
                         <li><a href="about-me.html">About Me</a></li>
                     </ul>
                 </div>

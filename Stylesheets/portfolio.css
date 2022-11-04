@@ -76,8 +76,12 @@ p{
     text-transform: capitalize;
     letter-spacing: normal;
 }
-/* set left and right margin on case study, after project overview */
-#wrapper{
+/* container for project text, "01. Navigation" and design solution text */
+.wrapper{
+    margin: 0 1rem;
+}
+/* container for project images, original and new design images */
+.image-grid{
     margin: 0 1rem;
 }
 
@@ -103,6 +107,9 @@ h3+p{
     margin: 0 1rem;
     padding-top: 5px;
 }
+#wireframes{
+    margin-top: 2rem;
+}
 #reflection{
     margin: 2rem 0;
 }
@@ -121,7 +128,6 @@ h3+p{
 .open-wireframes svg{
     padding-right: 10px;
 }
-
 /*-------------------------------------------------*/
 
 /* Media Query */
@@ -132,8 +138,12 @@ h3+p{
     .explanation{
         padding: 2rem;
     }
-    #wrapper{
+    .wrapper{
         margin: 0 2rem;
+    }
+    .image-grid{
+        margin: 0 2rem;
+        max-width: 65ch;
     }
 }
 /*-------------------------------------------------*/
@@ -142,9 +152,25 @@ h3+p{
         margin: 2rem auto 0 auto;
         max-width: 65ch;
     }
-    #wrapper{
+    .wrapper{
         margin: 0 auto;
         max-width: 65ch;
+    }
+    .image-grid{
+        margin: 0 auto;
+    }
+}
+/*-------------------------------------------------*/
+@media (min-width:1250px){
+    #hero-image{
+        height: 800px;
+    }
+    .image-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: max-content;
+        margin: 0 2rem;
     }
 }
 /*-------------------------------------------------*/
@@ -152,4 +178,8 @@ h3+p{
     #back{
         padding-left: 0;
     }
+    .image-grid{
+        margin: 0;
+    }
 }
+/*-------------------------------------------------*/
