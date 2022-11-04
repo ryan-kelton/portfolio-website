@@ -244,8 +244,8 @@ footer svg{
 /* End Footer Styles */
 /*-------------------------------------------------*/
 
-/* Medium Size Screen Style Adjustments */
-@media (min-width: 600px){
+/* Media Queries */
+@media screen and (min-width: 600px){
     html{
         font-size: 17px;
     }
@@ -283,15 +283,14 @@ footer svg{
         padding: 1rem 2rem;
     }
     #social-links{
-        grid-template-columns: 25% 25% 25% 25%;
         max-width: 600px;
         margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
     }
 }
 /*-------------------------------------------------*/
-
-/* Large Size Screen Style Adjustments */
-@media (min-width:1250px) {
+@media screen and (min-width:1250px) {
     html{
         font-size: 18px;
     }
@@ -306,8 +305,8 @@ footer svg{
         flex-grow: 2;
     }
 }
-
-@media (min-width: 1700px){
+/*-------------------------------------------------*/
+@media screen and (min-width: 1700px){
     html{
         font-size: 20px;
     }

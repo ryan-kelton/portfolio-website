@@ -130,8 +130,8 @@ h3+p{
 }
 /*-------------------------------------------------*/
 
-/* Media Query */
-@media (min-width: 600px){
+/* Media Queries */
+@media screen and (min-width: 600px){
     .text{
         margin: 2rem 2rem 0 2rem;
     }
@@ -147,7 +147,7 @@ h3+p{
     }
 }
 /*-------------------------------------------------*/
-@media (min-width: 800px){
+@media screen and (min-width: 800px){
     .text{
         margin: 2rem auto 0 auto;
         max-width: 65ch;
@@ -161,7 +161,7 @@ h3+p{
     }
 }
 /*-------------------------------------------------*/
-@media (min-width:1250px){
+@media screen and (min-width:1250px){
     #hero-image{
         height: 800px;
     }
@@ -174,7 +174,7 @@ h3+p{
     }
 }
 /*-------------------------------------------------*/
-@media (min-width: 1700px){
+@media screen and (min-width: 1700px){
     #back{
         padding-left: 0;
     }
