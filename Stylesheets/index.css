@@ -149,7 +149,7 @@ section h2, section h3, section p{
     }
     /*----*/
     #folio-grid{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
     .folio-card{
@@ -164,15 +164,11 @@ section h2, section h3, section p{
     }
 }
 /*-------------------------------------------------*/
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1700px){
     #intro{
         padding: 2rem 0;
     }
     /*----*/
-    #folio-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-    }
     #portfolio{
         margin: 2rem 0;
     }

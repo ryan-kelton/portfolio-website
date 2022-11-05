@@ -2,7 +2,8 @@
 :root{
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
-    --links: #0C5997;
+    --links: #1171C0;
+    --clickedLinks: #0A4B80;
     --darkGrey: #474747;
     --grey: #cecece;
     --lightGrey: #f8f8f8;
@@ -36,6 +37,10 @@ p{
 /*-------------------------------------------------*/
 
 /*-------------------------------------------------*/
+section{
+    max-width: 60rem;
+    margin: 0 auto;
+}
 #back{
     display: flex;
     align-items: center;
@@ -65,8 +70,7 @@ p{
 .explanation{
     background-color: var(--lightGrey);
     padding: 2rem 1rem;
-    margin: 1rem 0;
-    max-width: max-content;
+    margin-bottom: 1rem;
 }
 .explanation h4{
     margin: 0 0 0.35rem 0;
@@ -78,20 +82,13 @@ p{
 }
 /* container for project text, "01. Navigation" and design solution text */
 .wrapper{
-    margin: 0 1rem;
-}
-/* container for project images, original and new design images */
-.image-grid{
-    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 /* add divider in between sections */
 .section-break{
     border-bottom: 1.5px solid var(--grey);
     padding-bottom: 2rem;
-}
-.section-break h3{
-    margin-top: 2rem;
 }
 /* blue side bar on headers */
 .special{
@@ -101,7 +98,11 @@ p{
     left: -1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 1rem;
+    margin: 2rem 1rem 1rem 1rem;
+}
+.under-special{
+    position: relative;
+    top: -1rem;
 }
 h3+p{
     margin: 0 1rem;
@@ -112,15 +113,17 @@ h3+p{
 }
 #reflection{
     margin: 2rem 0;
+    background-color: var(--lightGrey);
+    padding: 2rem;
 }
 #reflection h2{
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 #reflection p{
     margin-bottom: 0.75rem;
     padding-left: 13px;
 }
-
 .open-wireframes{
     display: flex;
     align-items: center;
@@ -139,11 +142,10 @@ h3+p{
         padding: 2rem;
     }
     .wrapper{
-        margin: 0 2rem;
+        padding: 0 2rem;
     }
-    .image-grid{
-        margin: 0 2rem;
-        max-width: 65ch;
+    #back{
+        padding-left: 2rem;
     }
 }
 /*-------------------------------------------------*/
@@ -161,16 +163,34 @@ h3+p{
     }
 }
 /*-------------------------------------------------*/
-@media screen and (min-width:1250px){
+@media screen and (min-width: 1250px){
     #hero-image{
-        height: 800px;
+        height: 750px;
     }
     .image-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        max-width: max-content;
-        margin: 0 2rem;
+        margin: 0 auto;
+    }
+    .wrapper{
+        max-width: 60rem;
+    }
+    .text{
+        display: flex;
+        max-width: 60rem;
+        gap: 2rem;
+        align-items: center;
+    }
+    .left{
+        flex-grow: 2;
+    }
+    .left h1, .left p{
+        max-width: 50ch;
+    }
+    .right{
+        background-color: var(--lightGrey);
+        padding: 2rem;
     }
 }
 /*-------------------------------------------------*/

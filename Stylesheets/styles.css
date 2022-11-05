@@ -53,9 +53,11 @@ table {
 :root{
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
-    --links: #0C5997;
+    --links: #1171C0;
+    --clickedLinks: #0A4B80;
+    --darkGrey: #474747;
     --grey: #cecece;
-    --background: #f8f8f8;
+    --lightGrey: #f8f8f8;
 }
 html{
     color: var(--trueBlue);
@@ -68,7 +70,7 @@ a{
     color: var(--links);
 }
 a:hover, a:focus{
-    color: var(--electricBlue);
+    color: var(--clickedLinks);
 }
 h1{
     font-size: 2rem;
@@ -115,7 +117,7 @@ img{
 }
 .active{
     font-weight: 700;
-    color: var(--electricBlue);
+    color: var(--clickedLinks);
 }
 /* End Global Styles */
 /*-------------------------------------------------*/
