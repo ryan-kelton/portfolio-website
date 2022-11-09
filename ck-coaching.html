@@ -7,48 +7,79 @@
         <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CK Golf Coaching | Ryan Kelton&apos;s Portfolio</title>
-        <style>
-           img{
-            width: 100%;
-           }
-        </style>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./Stylesheets/styles.css">
+        <link rel="stylesheet" href="./Stylesheets/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="canonical" href="">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="large_summary_image">
+        <meta name="twitter:site" content="@RyanKelton4">
+        <!--Open Graph-->
+        <meta property="og:title" content="CK Golf Coaching | Ryan Kelton&apos;s Portfolio">
+        <meta property="og:description" content="Brand identity design for CK Golf Coaching">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ryankelton.com/ck-coaching.html">
+        <meta property="og:image" content="https://ryankelton.com/CK/CK-Hero-1000w.jpg">
     </head>
-    <body>
-        <header>
+    <body id="top">
+        <header id="main-header">
             <!--Logo and Tagline-->
-            <div>
-                <img src="./Assets/LogoType.svg" alt="ryan kelton wordmark">
-                <p>UX&frasl;UI Designer</p>
+            <div id="logo">
+                <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
+                <p>UX&#x2f;UI Designer</p>
             </div>
-            <a href="#top">Skip to Main Content</a>
+            <a href="#main-content" id="skip-link">Skip to Main Content</a>
             <nav>
-                <ul>
-                    <li>
-                        <!--Hamburger Menu-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="4" y1="6" x2="20" y2="6" />
-                        <line x1="4" y1="12" x2="20" y2="12" />
-                        <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                        <!--Exit Icon-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M10 10l4 4m0 -4l-4 4" />
-                        </svg>
-                    </li>
-                    <!--Navigation Links-->
+                <!--Hamburger Menu-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="hamburger-icon" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <!--Exit Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="exit-icon" class="icon icon-tabler icon-tabler-circle-x hide" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M10 10l4 4m0 -4l-4 4" />
+                </svg>
+                <!--Navigation Links-->
+                <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
-                    <li><a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></li>
-                </ul>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg><span class="text-hidden">ryankelton@gmail.com</span></a></li>
+                </ul> 
+                <!--Mobile Navigation Links-->
+                <ul id="mobile-nav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>ryankelton@gmail.com</a></li>
+                </ul>  
             </nav>
         </header>
-        <main id="top">
+        <main id="main-content">
             <!--Internal Back Button-->
-            <a href="index.html#portfolio">
+            <a href="index.html#portfolio" id="back">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -58,88 +89,105 @@
                 Back
             </a>
             <!--Project Overview-->
-            <header>
-                <img 
-                    srcset="./CK/CK-Hero-600w.jpg 600w, ./CK/CK-Hero-1000w.jpg 1000w, ./CK/CK-Hero-1500w.jpg 1500w"
-                    src="./CK/CK-Hero-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="ck golf coaching logo mockup">
-                <h1>CK Golf Coaching</h1>
-                <h2>Project Overview</h2>
-                <!--Description-->
-                <p>CK Golf Coaching was in need of a brand identity. Through a collaborative effort with Chris, we designed a brand visual style and logo that captured his personality, values and business goals.</p>
+            <header id="project-overview" class="section-break">
+                <img src="./CK/CK-Hero.webp" alt="ck golf coaching logo mockup">
+                <div class="text">
+                    <div class="left">
+                        <h1>CK Golf Coaching</h1>
+                        <h2>Project Overview</h2>
+                        <!--Description-->
+                        <p>CK Golf Coaching was in need of a brand identity. Through a collaborative effort with Chris, we designed a brand visual style and logo that captured his personality, values and business goals.</p>
+                    </div> 
+                </div>    
             </header>
-            <!--Ideation-->
-            <section>
-                <h3>Ideation</h3>
-                <img 
-                    srcset="./CK/Sketch-600w.jpg 600w, ./CK/Sketch-1000w.jpg 1000w, ./CK/Sketch-1500w.jpg 1500w"
-                    src="./CK/Sketch-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="sketch of logo idea involving the golf swing">
-                <p>After a collaborative brainstorming session, Chris and I decided on the “golf swing” idea.</p>
-            </section>
-            <!--Logo Iteration-->
-            <section>
-                <h3>Logo Iteration</h3>
-                <img 
-                    srcset="./CK/Logo-Ideas-600w.jpg 600w, ./CK/Logo-Ideas-1000w.jpg 1000w, ./CK/Logo-Ideas-1500w.jpg 1500w"
-                    src="./CK/Logo-Ideas-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="3 different logo concepts">
-            </section>
-            <!--Refinement-->
-            <section>
-                <h3>Refinement</h3>
-                <img 
-                    srcset="./CK/Pose-600w.jpg 600w, ./CK/Pose-1000w.jpg 1000w, ./CK/Pose-1500w.jpg 1500w"
-                    src="./CK/Pose-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="chris swinging his golf club">
-                <p>We chose to go with a variation on concept #1. I had Chris pose as if he had swung the club, and later traced his outline in illustrator.</p>
-            </section>
-            <!--Final Logo-->
-            <section>
-                <h3>Final Logo</h3>
-                <img 
-                    srcset="./CK/CK-Logo-600w.jpg 600w, ./CK/CK-Logo-1000w.jpg 1000w, ./CK/CK-Logo-1500w.jpg 1500w"
-                    src="./CK/CK-Logo-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="final logo with company name">
-                <p>We made the logotype italic and changed the font to Avenir Next to capture the sporty look.</p>
-            </section>
-            <!--Touch Points-->
-            <section>
-                <h3>Touch Points</h3>
-                <img 
-                    srcset="./CK/CK-BuzCard-600w.jpg 600w, ./CK/CK-BuzCard-1000w.jpg 1000w, ./CK/CK-BuzCard-1500w.jpg 1500w"
-                    src="./CK/CK-BuzCard-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="business card mockup">
-                <img 
-                    srcset="./CK/CK-Hat-600w.jpg 600w, ./CK/CK-Hat-1000w.jpg 1000w, ./CK/CK-Hat-1500w.jpg 1500w"
-                    src="./CK/CK-Hat-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="baseball hat mockup">
-                <img 
-                    srcset="./CK/CK-Shirt-600w.jpg 600w, ./CK/CK-Shirt-1000w.jpg 1000w, ./CK/CK-Shirt-1500w.jpg 1500w"
-                    src="./CK/CK-Shirt-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="t-shirt mockup">
-            </section>
-            <!--Reflection-->
-            <section>
-                <h2>Reflection</h2>
-                <p>Although the project turned out great, I think the design process could have gone smoother with some more planning. Had I created a more thorough project plan at the beginning I think we would not have needed as many revisions as we did.</p>
-            </section>
+            <div class="wrapper">
+                <!--Ideation-->
+                <section class="section-break">
+                    <h3 class="special">Ideation</h3>
+                    <div class="explanation">
+                        <h4>Explanation</h4>
+                        <p>After a collaborative brainstorming session, Chris and I decided on the “golf swing” idea. We fleshed out the concept into three variations.</p>
+                    </div>
+                    <div class="image-grid-c">
+                        <img 
+                        srcset="./CK/Sketch-600w.jpg 600w, ./CK/Sketch-1000w.jpg 1000w, ./CK/Sketch-1500w.jpg 1500w"
+                        src="./CK/Sketch-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="sketch of logo idea involving the golf swing">
+                        <img 
+                        srcset="./CK/Logo-Ideas-600w.jpg 600w, ./CK/Logo-Ideas-1000w.jpg 1000w, ./CK/Logo-Ideas-1500w.jpg 1500w"
+                        src="./CK/Logo-Ideas-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="3 different logo concepts">
+                    </div>
+                    
+                </section>
+                <!--Refinement-->
+                <section class="section-break">
+                    <h3 class="special">Refinement</h3>
+                    <div class="explanation">
+                        <h4>Explanation</h4>
+                        <p>We chose to go with a variation on concept #1. I had Chris pose as if he had swung the club, and later traced his outline in illustrator.</p>
+                    </div>
+                    <div class="image-grid-c">
+                        <img 
+                            srcset="./CK/Pose-600w.jpg 600w, ./CK/Pose-1000w.jpg 1000w, ./CK/Pose-1500w.jpg 1500w"
+                            src="./CK/Pose-1000w.jpg"
+                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                            alt="chris swinging his golf club">
+                        <img src="./CK/CK-Logo-Icon.webp" alt="Silhouette of Chris swinging his left handed golf club">
+                    </div>
+                </section>
+                <!--Final Logo-->
+                <section class="section-break">
+                    <h3 class="special">Final Logo</h3>
+                    <div class="explanation">
+                        <h4>Explanation</h4>
+                        <p>We made the logotype italic and changed the font to Avenir Next to capture the sporty look.</p>
+                    </div>
+                    <img 
+                        srcset="./CK/CK-Logo-600w.jpg 600w, ./CK/CK-Logo-1000w.jpg 1000w, ./CK/CK-Logo-1500w.jpg 1500w"
+                        src="./CK/CK-Logo-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="final logo with company name">
+                </section>
+                <!--Touch Points-->
+                <section class="section-break">
+                    <h3 class="special">Touch Points</h3>
+                    <div class="image-grid-3">
+                        <img 
+                        srcset="./CK/CK-BuzCard-600w.jpg 600w, ./CK/CK-BuzCard-1000w.jpg 1000w, ./CK/CK-BuzCard-1500w.jpg 1500w"
+                        src="./CK/CK-BuzCard-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="business card mockup">
+                    <img 
+                        srcset="./CK/CK-Hat-600w.jpg 600w, ./CK/CK-Hat-1000w.jpg 1000w, ./CK/CK-Hat-1500w.jpg 1500w"
+                        src="./CK/CK-Hat-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="baseball hat mockup">
+                    <img 
+                        srcset="./CK/CK-Shirt-600w.jpg 600w, ./CK/CK-Shirt-1000w.jpg 1000w, ./CK/CK-Shirt-1500w.jpg 1500w"
+                        src="./CK/CK-Shirt-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="t-shirt mockup">
+                    </div>
+                </section>
+                <!--Reflection-->
+                <section id="reflection">
+                    <h2 class="special">Reflection</h2>
+                    <p>Although the project turned out great, I think the design process could have gone smoother with some more planning. Had I created a more thorough project plan at the beginning I think we would not have needed as many revisions as we did.</p>
+                </section>
+            </div>
             <!--Top of Page Link-->
-            <a href="#top">Top of Page</a>
+            <div id="top-page">
+                <a href="#top">Top of Page</a>
+            </div>
             <!--Footer-->
             <footer>
                 <h2 class="text-hidden">Footer</h2>
-                <ul>
+                <ul id="social-links">
                     <!--LinkedIn-->
-                    <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -150,14 +198,14 @@
                         </svg>LinkedIn
                     </a></li>
                     <!--Github-->
-                    <li><a href="https://github.com/ryan-kelton">
+                    <li id="github"><a href="https://github.com/ryan-kelton">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>Github
                     </a></li>
                     <!--Mail-->
-                    <li><a href="mailto:ryankelton@gmail.com">
+                    <li id="email"><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -165,7 +213,7 @@
                         </svg>Email
                     </a></li>
                     <!--Download Resume-->
-                    <li><a href="./Assets/resume.pdf">
+                    <li id="resume"><a href="./Assets/resume.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="4" y1="20" x2="20" y2="20" />
@@ -175,13 +223,15 @@
                         </svg>resume.pdf
                     </a></li>
                 </ul>
-                <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
-                <!--Footer Navigation-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about-me.html">About Me</a></li>
-                </ul>
+                <div id="small-nav">
+                    <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
+                    <!--Footer Navigation-->
+                    <ul id="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                    </ul>
+                </div>
             </footer>
         </main>
     </body>

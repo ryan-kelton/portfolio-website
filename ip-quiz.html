@@ -7,48 +7,79 @@
         <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Intellectual Property Quiz | Ryan Kelton&apos;s Portfolio</title>
-        <style>
-           img{
-            width: 100%;
-           }
-        </style>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="./Stylesheets/styles.css">
+        <link rel="stylesheet" href="./Stylesheets/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="canonical" href="">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Twitter Card-->
+        <meta name="twitter:card" content="large_summary_image">
+        <meta name="twitter:site" content="@RyanKelton4">
+        <!--Open Graph-->
+        <meta property="og:title" content="Intellectual Property Quiz | Ryan Kelton&apos;s Portfolio">
+        <meta property="og:description" content="Intellectual property interactive webpage quiz">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ryankelton.com/ip-quiz.html">
+        <meta property="og:image" content="https://ryankelton.com/Andiamo/IP/Hero-1000w.jpg">
     </head>
-    <body>
-        <header>
+    <body id="top">
+        <header id="main-header">
             <!--Logo and Tagline-->
-            <div>
-                <img src="./Assets/LogoType.svg" alt="ryan kelton wordmark">
-                <p>UX&frasl;UI Designer</p>
+            <div id="logo">
+                <img src="./Assets/Type.svg" alt="ryan kelton wordmark">
+                <p>UX&#x2f;UI Designer</p>
             </div>
-            <a href="#top">Skip to Main Content</a>
+            <a href="#main-content" id="skip-link">Skip to Main Content</a>
             <nav>
-                <ul>
-                    <li>
-                        <!--Hamburger Menu-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="4" y1="6" x2="20" y2="6" />
-                        <line x1="4" y1="12" x2="20" y2="12" />
-                        <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                        <!--Exit Icon-->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M10 10l4 4m0 -4l-4 4" />
-                        </svg>
-                    </li>
-                    <!--Navigation Links-->
+                <!--Hamburger Menu-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="hamburger-icon" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+                <!--Exit Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" id="exit-icon" class="icon icon-tabler icon-tabler-circle-x hide" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M10 10l4 4m0 -4l-4 4" />
+                </svg>
+                <!--Navigation Links-->
+                <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
                     <li><a href="about-me.html">About Me</a></li>
-                    <li><a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></li>
-                </ul>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg><span class="text-hidden">ryankelton@gmail.com</span></a></li>
+                </ul> 
+                <!--Mobile Navigation Links-->
+                <ul id="mobile-nav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>ryankelton@gmail.com</a></li>
+                </ul>  
             </nav>
         </header>
-        <main id="top">
+        <main id="main-content">
             <!--Internal Back Button-->
-            <a href="index.html#portfolio">
+            <a href="index.html#portfolio" id="back">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -58,54 +89,60 @@
                 Back
             </a>
             <!--Project Overview-->
-            <header>
-                <img 
-                    srcset="./IP/Hero-600w.jpg 600w, ./IP/Hero-1000w.jpg 1000w, ./IP/Hero-1500w.jpg 1500w"
-                    src="./IP/Hero-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="intellectual property quiz mockup with all 5 screens">
-                <h1>Intellectual Property Quiz</h1>
-                <h2>Project Overview</h2>
-                <!--Description-->
-                <p>Have you ever wondered at the difference between copyright and trademark law? Or can you explain the difference between a patent and a trade secret? Intellectual property is a must know for any creative, but it can be a daunting subject to learn. With this interactive and fun quiz you can work through the distinguishing characteristics of the 4 IP laws.</p>
-                <!--Link to Prototype-->
+            <header id="project-overview" class="section-break">
+                <img src="./IP/Ip-Quiz-Hero.webp" alt="intellectual property quiz mockup with all 5 screens">
+                <div class="text">
+                    <div class="left">
+                        <h1>Intellectual Property Quiz</h1>
+                        <h2>Project Overview</h2>
+                        <!--Description-->
+                        <p>Have you ever wondered at the difference between copyright and trademark law? Or can you explain the difference between a patent and a trade secret? Intellectual property is a must know for any creative, but it can be a daunting subject to learn. With this interactive and fun quiz you can work through the distinguishing characteristics of the 4 IP laws.</p>
+                    </div>
+                    <div class="right">
+                         <!--Link to Prototype-->
                 <a href="https://xd.adobe.com/view/eaf4a45f-c58f-4d62-9167-adedb513afdc-bfa7/?fullscreen" target="_blank">Link to Adobe Xd prototype</a>
+                    </div>
+                </div>    
             </header>
-            <!--Moodboard-->
-            <section>
-                <h3>Moodboard</h3>
-                <img 
-                    srcset="./IP/Moodboard-600w.jpg 600w, ./IP/Moodboard-1000w.jpg 1000w, ./IP/Moodboard-1500w.jpg 1500w"
-                    src="./IP/Moodboard-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="intellectual property quiz moodboard">
-            </section>
-            <!--Sketches-->
-            <section>
-                <h3>Sketches</h3>
-                <img 
-                    srcset="./IP/Sketches-600w.jpg 600w, ./IP/Sketches-1000w.jpg 1000w, ./IP/Sketches-1500w.jpg 1500w"
-                    src="./IP/Sketches-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="intellectual property quiz sketches">
-            </section>
-            <!--User Flow-->
-            <section>
-                <h3>User Flow</h3>
-                <img 
-                    srcset="./IP/UserFlow-600w.jpg 600w, ./IP/UserFlow-1000w.jpg 1000w, ./IP/UserFlow-1500w.jpg 1500w"
-                    src="./IP/UserFlow-1000w.jpg"
-                    sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                    alt="intellectual property quiz user flow">
-            </section>
+            <div class="wrapper">
+                 <!--Moodboard-->
+                <section class="section-break">
+                    <h3 class="special">Moodboard</h3>
+                    <img 
+                        srcset="./IP/Moodboard-600w.jpg 600w, ./IP/Moodboard-1000w.jpg 1000w, ./IP/Moodboard-1500w.jpg 1500w"
+                        src="./IP/Moodboard-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="intellectual property quiz moodboard">
+                </section>
+                <!--Sketches-->
+                <section class="section-break">
+                    <h3 class="special">Sketches</h3>
+                    <img 
+                        srcset="./IP/Sketches-600w.jpg 600w, ./IP/Sketches-1000w.jpg 1000w, ./IP/Sketches-1500w.jpg 1500w"
+                        src="./IP/Sketches-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="intellectual property quiz sketches">
+                </section>
+                <!--User Flow-->
+                <section>
+                    <h3 class="special">User Flow</h3>
+                    <img 
+                        srcset="./IP/UserFlow-600w.jpg 600w, ./IP/UserFlow-1000w.jpg 1000w, ./IP/UserFlow-1500w.jpg 1500w"
+                        src="./IP/UserFlow-1000w.jpg"
+                        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
+                        alt="intellectual property quiz user flow">
+                </section>
+            </div>
             <!--Top of Page Link-->
-            <a href="#top">Top of Page</a>
+            <div id="top-page">
+                <a href="#top">Top of Page</a>
+            </div>
             <!--Footer-->
             <footer>
                 <h2 class="text-hidden">Footer</h2>
-                <ul>
+                <ul id="social-links">
                     <!--LinkedIn-->
-                    <li><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -116,14 +153,14 @@
                         </svg>LinkedIn
                     </a></li>
                     <!--Github-->
-                    <li><a href="https://github.com/ryan-kelton">
+                    <li id="github"><a href="https://github.com/ryan-kelton">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>Github
                     </a></li>
                     <!--Mail-->
-                    <li><a href="mailto:ryankelton@gmail.com">
+                    <li id="email"><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -131,7 +168,7 @@
                         </svg>Email
                     </a></li>
                     <!--Download Resume-->
-                    <li><a href="./Assets/resume.pdf">
+                    <li id="resume"><a href="./Assets/resume.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="4" y1="20" x2="20" y2="20" />
@@ -141,13 +178,15 @@
                         </svg>resume.pdf
                     </a></li>
                 </ul>
-                <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
-                <!--Footer Navigation-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about-me.html">About Me</a></li>
-                </ul>
+                <div id="small-nav">
+                    <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
+                    <!--Footer Navigation-->
+                    <ul id="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                    </ul>
+                </div>
             </footer>
         </main>
     </body>

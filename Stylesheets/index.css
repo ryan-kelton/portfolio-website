@@ -129,7 +129,7 @@ section h2, section h3, section p{
 }
 /*-------------------------------------------------*/
 
-/* Media Queries */
+/* Large Size Screen Style Adjustments */
 @media screen and (min-width: 900px) {
     #intro img{
         width: 300px;
@@ -149,7 +149,7 @@ section h2, section h3, section p{
     }
     /*----*/
     #folio-grid{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
     .folio-card{
@@ -164,6 +164,12 @@ section h2, section h3, section p{
     }
 }
 /*-------------------------------------------------*/
+@media screen and (min-width: 1200px){
+    #folio-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Extra Large Size Screen Style Adjustments */
 @media screen and (min-width: 1700px){
     #intro{
         padding: 2rem 0;
