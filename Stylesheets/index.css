@@ -14,6 +14,7 @@ section h2, section h3, section p{
 /* Welcome Section */
 #intro{
     background-color: white;
+    background-image: url(../Assets/Pattern.svg);
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--grey);
 }

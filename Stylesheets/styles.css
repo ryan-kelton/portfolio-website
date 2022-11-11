@@ -136,6 +136,10 @@ img{
     flex-grow: 2;
     margin-right: 2rem;
 }
+#logo a{
+    text-decoration: none;
+    color: var(--trueBlue);
+}
 #logo img{
     width: 7.35rem;
 }
