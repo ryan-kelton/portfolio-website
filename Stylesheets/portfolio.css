@@ -114,7 +114,7 @@ h3+p{
     margin: 0 1rem;
     padding-top: 5px;
 }
-#wireframes{
+#extra-files{
     margin-top: 2rem;
 }
 #reflection{
@@ -130,11 +130,12 @@ h3+p{
     margin-bottom: 0.75rem;
     padding-left: 13px;
 }
-.open-wireframes{
+.open-file{
     display: flex;
     align-items: center;
+    padding-bottom: 0.5rem;
 }
-.open-wireframes svg{
+.open-file svg{
     padding-right: 10px;
 }
 #top-page{

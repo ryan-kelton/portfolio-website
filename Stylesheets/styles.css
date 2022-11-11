@@ -92,7 +92,7 @@ h4{
     line-height: 1.5rem;
     font-weight: 700;
 }
-p{
+p, q{
     line-height: 1.25rem;
 }
 img{
