@@ -28,7 +28,6 @@
     justify-content: center;
     text-decoration: none;
     width: 100%;
-    max-width: 400px;
 }
 #email-cta:hover, #email-cta:focus{
     background-color: var(--links);
@@ -44,23 +43,42 @@
     #main-content section{
         padding: 2rem;
     }
-    #profile-img{
-        max-height: 600px;
-        overflow: hidden;
-    }
-    #profile-img img{
-        object-fit: cover;
-        object-position: 0 -6rem;
+    #email-cta{
+        max-width: 400px;
     }
 }
 /*-------------------------------------------------*/
 @media screen and (min-width: 800px){
     #wrapper{
         margin: 0 auto;
-        max-width: 65ch;
+        max-width: 40rem;
     }
-    #main-content section{
-        padding: 2rem 0 1rem 0;
+    #profile-img{
+        height: 40rem;
+    }
+    #profile-img img{
+        border-radius: 500px;
     }
 }
 /*-------------------------------------------------*/
+@media screen and (min-width: 1400px){
+    #wrapper{
+        margin: 0;
+        max-width: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        margin: 0 2rem;
+    }
+    #email-cta{
+        margin: 0;
+        max-width: max-content;
+        padding: 0.5rem 1rem;
+    }
+    #profile-img{
+        border-radius: 500px;
+        height: 35rem;
+        width: 35rem;
+    }
+}
