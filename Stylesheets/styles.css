@@ -95,6 +95,9 @@ h4{
 p, q{
     line-height: 1.25rem;
 }
+em{
+    font-style: italic;
+}
 img{
     width: 100%;
     object-fit: cover;
