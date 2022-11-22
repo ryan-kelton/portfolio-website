@@ -3,9 +3,9 @@
 //window.onresize = function(){ location.reload(); }
 
 // Variables
-let mobileNav = document.getElementById("mobile-nav");
-let hamburgerIcon = document.getElementById("hamburger-icon");
-let exitIcon = document.getElementById("exit-icon");
+const mobileNav = document.getElementById("mobile-nav");
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const exitIcon = document.getElementById("exit-icon");
 
 // When hamburger menu is clicked turn on mobile navigation styles
 function hamburger(){
