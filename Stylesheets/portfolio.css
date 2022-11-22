@@ -37,6 +37,9 @@ p{
 /*-------------------------------------------------*/
 
 /*-------------------------------------------------*/
+#hero-image{
+    height: 200px;
+}
 section{
     max-width: 60rem;
     margin: 0 auto;
@@ -144,7 +147,15 @@ h3+p{
 /*-------------------------------------------------*/
 
 /* Media Queries */
+@media screen and (min-width:435px){
+    #hero-image{
+        height: 300px;
+    }
+}
 @media screen and (min-width: 600px){
+    #hero-image{
+        height: 400px;
+    }
     .text{
         margin: 2rem 2rem 0 2rem;
     }
@@ -160,6 +171,9 @@ h3+p{
 }
 /*-------------------------------------------------*/
 @media screen and (min-width: 800px){
+    #hero-image{
+        height: 550px;
+    }
     .text{
         margin: 2rem auto 0 auto;
         max-width: 65ch;
