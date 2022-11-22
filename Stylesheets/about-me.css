@@ -1,3 +1,10 @@
+#profile-img{
+    height: 15rem;
+    width: 15rem;
+}
+#profile-img img{
+    border-radius: 500px;
+}
 #main-content section{
     padding: 1rem;
 }
@@ -10,6 +17,7 @@
     margin-bottom: 1rem;
     font-size: 2rem;
     line-height: 2.5rem;
+    text-align: center;
 }
 #main-content p{
     margin-bottom: 1rem;
@@ -46,6 +54,12 @@
 /*-------------------------------------------------*/
 
 /* Media Queries */
+@media screen and (min-width: 450px){
+    #profile-img{
+        height: 20rem;
+        width: 20rem;
+    }  
+}
 @media screen and (min-width: 600px){
     #main-content section{
         padding: 2rem;
