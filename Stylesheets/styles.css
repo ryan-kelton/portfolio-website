@@ -143,9 +143,6 @@ img{
     text-decoration: none;
     color: var(--trueBlue);
 }
-#logo img, .logo-type{
-    width: 7.35rem;
-}
 /*----*/
 #skip-link{
     position: absolute;
