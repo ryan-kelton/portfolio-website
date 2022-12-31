@@ -42,6 +42,7 @@
     </head>
     <body id="top">
         <header id="main-header">
+            <a href="#main-content" id="skip-link">Skip to Main Content</a>
             <!--Logo and Tagline-->
             <div id="logo">
                 <a href="index.html">
@@ -94,9 +95,7 @@
                     <p>UX&#x2f;UI Designer</p>
                 </a>   
             </div>
-            <a href="#main-content" id="skip-link">Skip to Main Content</a>
-            <nav>
-                <h2 class="text-hidden">Navigation</h2>
+            <div class="hamburger-exit">
                 <!--Hamburger Menu-->
                 <svg xmlns="http://www.w3.org/2000/svg" id="hamburger-icon" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -110,11 +109,13 @@
                 <circle cx="12" cy="12" r="9" />
                 <path d="M10 10l4 4m0 -4l-4 4" />
                 </svg>
+            </div>
+            <nav>
                 <!--Navigation Links-->
                 <ul id="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about-me.html"  class="active">About Me</a></li>
+                    <li><a href="about-me.html" class="active">About Me</a></li>
                     <li class="nav-email"><a href="mailto:ryankelton@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -126,7 +127,7 @@
                 <ul id="mobile-nav" class="hide">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="about-me.html"  class="active">About Me</a></li>
+                    <li><a href="about-me.html" class="active">About Me</a></li>
                     <li class="nav-email"><a href="mailto:ryankelton@gmail.com" id="mobile-email">
                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-email-icon icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -148,7 +149,7 @@
                     <p>From as far back as I can remember, I have always loved learning how things work and creating new things of my own. But with age and experience came a new perspective on design. As a UX/UI designer, I now seek to use and develop my skills and knowledge to <em>help other people</em> have the best experience online.</p>
                     <p>On a personal level I am an avid reader, continual learner and <a href="https://open.spotify.com/artist/5g3blvKMeTJOffx2pUSE4Y" target="_blank">musician on Spotify</a>.</p>
                     <!-- <q>&ldquo;So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets&rdquo; (Matthew 7:12).</q> -->
-                    <p>If you haven&apos;t checked out my <a href="index.html#portfolio">portfolio</a> or <a href="./Assets/resume.pdf">resume</a> yet, I encourage you to do so. Use the link below to send me an email regarding any job opportunities, my schedule is open.</p> 
+                    <p>If you haven&apos;t checked out my <a href="index.html#portfolio">portfolio</a> or <a href="./Assets/resume.pdf">resume</a> yet, please do so. Use the link below to send me an email, I would love to hear from you.</p> 
                     <a href="mailto:ryankelton@gmail.com" id="email-cta">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail email-icon" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -163,7 +164,7 @@
                 <ul id="social-links">
                     <!--LinkedIn-->
                     <li id="linkedin"><a href="https://www.linkedin.com/in/ryan-kelton-8b04401ba/">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="4" y="4" width="16" height="16" rx="2" />
                         <line x1="8" y1="11" x2="8" y2="16" />
@@ -174,37 +175,29 @@
                     </a></li>
                     <!--Github-->
                     <li id="github"><a href="https://github.com/ryan-kelton">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg><span class="text-hidden">GitHub</span>
                     </a></li>
                     <!--Mail-->
                     <li id="email"><a href="mailto:ryankelton@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
                         </svg><span class="text-hidden">Email</span>
                     </a></li>
-                    <!--Download Resume-->
-                    <li id="resume"><a href="./Assets/resume.pdf">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                            <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                            </svg>My Resume
-                    </a></li>
                 </ul>
-                <div id="small-nav">
-                    <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
-                    <!--Footer Navigation-->
-                    <ul id="footer-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#portfolio">Portfolio</a></li>
-                        <li><a href="about-me.html" class="active">About Me</a></li>
-                    </ul>
-                </div>
+                <!--Download Resume-->
+                <a href="./Assets/resume.pdf" id="resume">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#1485E2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>resume.pdf
+                </a>
+                <small>All content &copy; 2022 Ryan Kelton and respective copyright holders.</small>
             </footer>
         </main>
     </body>

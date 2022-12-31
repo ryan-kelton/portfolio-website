@@ -10,7 +10,7 @@ const exitIcon = document.getElementById("exit-icon");
 // When hamburger menu is clicked turn on mobile navigation styles
 function hamburger(){
     mobileNav.classList.add("mobile-nav-styles");
-    mobileNav.classList.remove("text-hidden");
+    mobileNav.classList.remove("hide");
     hamburgerIcon.classList.add("hide");
     exitIcon.classList.remove("hide");
 }
@@ -18,7 +18,7 @@ function hamburger(){
 // When the exit icon is clicked turn off mobile navigation styles
 function exit(){
     mobileNav.classList.remove("mobile-nav-styles");
-    mobileNav.classList.add("text-hidden");
+    mobileNav.classList.add("hide");
     exitIcon.classList.add("hide");
     hamburgerIcon.classList.remove("hide");
 }
@@ -26,3 +26,4 @@ function exit(){
 hamburgerIcon.addEventListener("click", hamburger);
 exitIcon.addEventListener("click", exit);
 mobileNav.addEventListener("click", exit);
+

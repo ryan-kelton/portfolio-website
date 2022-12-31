@@ -71,6 +71,7 @@ a{
 }
 a:hover, a:focus{
     color: var(--clickedLinks);
+    text-decoration: underline;
 }
 h1{
     font-size: 2rem;
@@ -120,7 +121,6 @@ img{
 }
 .active{
     font-weight: 700;
-    text-decoration: underline;
     color: var(--clickedLinks);
 }
 /* End Global Styles */
@@ -129,16 +129,17 @@ img{
 /* Global Header and Nav */
 #main-header{
     background-color: white;
-    display: flex;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    height: 50px;
     border-bottom: 1px solid var(--grey);
+    /* box-shadow: 2px 10px 34px 3px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 2px 10px 34px 3px rgba(0,0,0,0.05);
+    -moz-box-shadow: 2px 10px 34px 3px rgba(0,0,0,0.05); */
 }
 /*----*/
 #logo{
-    flex-grow: 2;
-    margin-right: 2rem;
+    padding: 1rem;
 }
 #logo a{
     text-decoration: none;
@@ -156,35 +157,43 @@ img{
     padding: 10px;
 }
 /*----*/
-ul a{
+/* Menu */
+.hamburger-exit{
+    position: absolute;
+    top: 23px;
+    right: 1rem;
+}
+nav{
+    grid-column: 1/-1;
+}
+nav ul a{
     text-decoration: none;
 }
 #main-nav{
     display: none;
 }
 .mobile-nav-styles{
-    width: 100%;
-    height: calc(100vh - 83px);
     background-color: white;
-    border-bottom: 1px solid var(--grey);
-    display: flex;
 }
 .mobile-nav-styles li{
+    padding-left: 1rem;
     font-size: 1.25rem;
-    border-bottom: 1px solid var(--grey);
     display: flex;
+    align-items: center;
+}
+#mobile-nav li:nth-of-type(1){
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+#mobile-nav li:nth-of-type(2){
+    border-bottom: 1px solid var(--grey);
 }
 .mobile-nav-styles a{
-    padding: 1rem;
-}
-#mobile-nav ul{
-    width: 100%;
+    padding: 20px 20px 20px 0;
 }
 /*----*/
 .nav-email{
     background-color: var(--electricBlue);
-    width: max-content;
-    border-radius: 8px;
 }
 .nav-email a{
     color: white;
@@ -214,41 +223,42 @@ ul a{
 }
 /*----*/
 footer{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    align-items: center;
     border-top: 1px solid var(--grey);
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     background-image: url(../Assets/Pattern.svg);
     background-color: white;
-}
-footer svg{
-    padding-right: 1rem;
-}
-#resume svg{
-    padding-right: 2px;
 }
 /*----*/
 #social-links{
     display: flex;
-    flex-direction: row;
+    max-width: 200px;
+}
+#social-links svg{
+    background-color: var(--electricBlue);
+    border-radius: 100px;
+    padding: 10px;
 }
 #social-links a{
     display: flex;
     align-items: center;
-    padding: 1rem 0 1rem 0;
+    padding-right: 0.75rem;
+}
+#social-links svg:hover{
+    background-color: var(--clickedLinks);
+}
+#resume{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 /*----*/
-#footer-nav{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem 0;
-}
-#footer-nav a{
-    padding: 1rem;
-}
-#footer-nav a:first-child{
-    padding-left: 0;
+footer small{
+    margin-top: 0.5rem;
 }
 /* End Footer Styles */
 /*-------------------------------------------------*/
@@ -256,11 +266,17 @@ footer svg{
 /* Media Queries */
 @media screen and (min-width: 600px){
     html{
-        font-size: 17px;
+        font-size: 18px;
     }
     /* Header and Nav */
-    #main-header{
+    #logo{
         padding: 1rem 2rem;
+    }
+    nav{
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        padding-right: 2rem;
     }
     #hamburger-icon, #exit-icon{
         display: none;
@@ -289,13 +305,7 @@ footer svg{
     }
     /* Footer */
     footer{
-        padding: 1rem 2rem;
-    }
-    #social-links{
-        max-width: 600px;
-        margin-bottom: 0;
-        display: flex;
-        justify-content: space-between;
+        padding: 1rem 2rem 2rem 2rem;
     }
 }
 /*-------------------------------------------------*/
@@ -303,23 +313,16 @@ footer svg{
     html{
         font-size: 18px;
     }
-    #footer-nav{
-        margin-top: 0;
-    }
-    #small-nav{
-        display: flex;
-        align-items: center;
-    }
-    small{
-        flex-grow: 2;
-    }
 }
 /*-------------------------------------------------*/
 @media screen and (min-width: 1700px){
     html{
         font-size: 20px;
     }
-    #main-header{
+    #logo{
+        padding: 1rem 0;
+    }
+    nav{
         padding: 1rem 0;
     }
     footer{
