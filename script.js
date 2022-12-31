@@ -26,4 +26,3 @@ function exit(){
 hamburgerIcon.addEventListener("click", hamburger);
 exitIcon.addEventListener("click", exit);
 mobileNav.addEventListener("click", exit);
-

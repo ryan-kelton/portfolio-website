@@ -165,29 +165,20 @@ ul a{
 .mobile-nav-styles{
     width: 100%;
     height: calc(100vh - 83px);
-    background-color: var(--trueBlue);
+    background-color: white;
     border-bottom: 1px solid var(--grey);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-in-out;
 }
 .mobile-nav-styles li{
     font-size: 1.25rem;
     border-bottom: 1px solid var(--grey);
-    margin: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mobile-nav-styles li:last-of-type{
-    border: none;
-    position: relative;
-    top: 10px;
 }
 .mobile-nav-styles a{
     padding: 1rem;
-    color: white;
+}
+#mobile-nav ul{
+    width: 100%;
 }
 /*----*/
 .nav-email{
