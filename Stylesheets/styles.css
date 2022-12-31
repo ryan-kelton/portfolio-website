@@ -259,6 +259,7 @@ footer{
 /*----*/
 footer small{
     margin-top: 0.5rem;
+    grid-column: 1/-1;
 }
 /* End Footer Styles */
 /*-------------------------------------------------*/
