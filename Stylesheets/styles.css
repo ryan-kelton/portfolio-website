@@ -93,11 +93,19 @@ h4{
     line-height: 1.5rem;
     font-weight: 700;
 }
+h5{
+    font-size: 1.10rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
 p, q{
     line-height: 1.25rem;
 }
 em{
     font-style: italic;
+}
+b{
+    font-weight: 700;
 }
 img{
     width: 100%;
@@ -228,6 +236,7 @@ footer{
     gap: 0.5rem;
     align-items: center;
     border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
     margin-top: 2rem;
     padding: 1rem 1rem 2rem 1rem;
     background-image: url(../Assets/Pattern.svg);

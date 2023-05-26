@@ -75,7 +75,7 @@ section{
     padding: 2rem 1rem;
     margin-bottom: 1rem;
 }
-.explanation p:nth-child(3){
+.explanation p{
     margin-top: 0.5rem;
 }
 .explanation h4{
