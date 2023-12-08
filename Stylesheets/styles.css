@@ -53,7 +53,7 @@ table {
 :root{
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
-    --links: #1171C0;
+    --links: #0C5997;
     --clickedLinks: #0A4B80;
     --darkGrey: #474747;
     --grey: #cecece;
@@ -68,6 +68,7 @@ html{
 }
 a{
     color: var(--links);
+    text-decoration: none;
 }
 a:hover, a:focus{
     color: var(--clickedLinks);
@@ -130,6 +131,7 @@ img{
 .active{
     font-weight: 700;
     color: var(--clickedLinks);
+    text-decoration: underline;
 }
 /* End Global Styles */
 /*-------------------------------------------------*/
@@ -176,6 +178,7 @@ nav{
 }
 nav ul a{
     text-decoration: none;
+    color: var(--links);
 }
 #main-nav{
     display: none;
@@ -198,6 +201,12 @@ nav ul a{
 }
 .mobile-nav-styles a{
     padding: 20px 20px 20px 0;
+}
+#back{
+    stroke: var(--links);
+}
+#back:hover, #back:focus{
+    stroke: var(--clickedLinks);
 }
 /*----*/
 .nav-email{
@@ -264,11 +273,23 @@ footer{
     display: flex;
     align-items: center;
     justify-content: end;
+    text-decoration: none;
+    color: var(--links);
+}
+#resume:hover{
+    text-decoration: underline;
+    color: var(--clickedLinks);
 }
 /*----*/
 footer small{
     margin-top: 0.5rem;
     grid-column: 1/-1;
+}
+#resume{
+    stroke: var(--links);
+}
+#resume:hover, #resume:focus{
+    stroke: var(--clickedLinks);
 }
 /* End Footer Styles */
 /*-------------------------------------------------*/
@@ -330,10 +351,10 @@ footer small{
         font-size: 20px;
     }
     #logo{
-        padding: 1rem 0;
+        padding: 1rem 0rem;
     }
     nav{
-        padding: 1rem 0;
+        padding: 1rem 0rem;
     }
     footer{
         border-left: 1px solid var(--grey);

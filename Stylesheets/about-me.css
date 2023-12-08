@@ -1,3 +1,12 @@
+:root{
+    --trueBlue: #02204C;
+    --electricBlue: #1485E2;
+    --links: #0C5997;
+    --clickedLinks: #0A4B80;
+    --darkGrey: #474747;
+    --grey: #cecece;
+    --lightGrey: #f8f8f8;
+}
 #profile-img{
     height: 15rem;
     width: 15rem;
@@ -7,6 +16,7 @@
 }
 #main-content section{
     padding: 1rem;
+    text-align: left;
 }
 #main-content h1{
     padding: 0.5rem 1rem;
@@ -28,25 +38,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 2rem;
+    min-height: 700px;
 }
 /*----*/
 #email-cta{
-    color: white;
-    background-color: var(--electricBlue);
-    padding: 0.5rem 0rem;
-    margin: 2rem auto 1rem auto;
+    color: var(--electricBlue);
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 1rem 0 0rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--links);
+    border: 1px solid var(--electricBlue);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 100%;
+    max-width: max-content;
+    stroke: var(--electricBlue);
 }
 #email-cta:hover, #email-cta:focus{
-    background-color: var(--links);
+    border: 1px solid var(--clickedLinks);
+    text-decoration: underline;
     font-weight: 400;
+    color: var(--clickedLinks);
+    stroke: var(--clickedLinks);
 }
 .email-icon{
     padding-right: 10px;
@@ -63,9 +78,6 @@
 @media screen and (min-width: 600px){
     #main-content section{
         padding: 2rem;
-    }
-    #email-cta{
-        max-width: 400px;
     }
     #profile-img{
         height: 25rem;
@@ -86,18 +98,13 @@
 /*-------------------------------------------------*/
 @media screen and (min-width: 1200px){
     #wrapper{
-        max-width: 1100px;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        align-items: center;
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
         justify-items: center;
         margin: 0 auto;
         gap: 1rem;
-    }
-    #email-cta{
-        margin: 0;
-        max-width: max-content;
-        padding: 0.5rem 1rem;
+        padding: 0 2rem;
     }
     #profile-img{
         border-radius: 500px;
@@ -105,8 +112,8 @@
         width: auto;
     }
     #profile-img img{
-        height: 300px;
-        width: 300px;
+        height: 500px;
+        width: 500px;
     }
     #main-content h2{
         text-align: left;

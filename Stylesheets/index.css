@@ -3,7 +3,10 @@
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
     --links: #0C5997;
+    --clickedLinks: #0A4B80;
+    --darkGrey: #474747;
     --grey: #cecece;
+    --lightGrey: #f8f8f8;
 }
 section h2, section h3, section p{
     margin: 0 1rem;
@@ -11,12 +14,31 @@ section h2, section h3, section p{
 /* End Global Styles For Page */
 /*-------------------------------------------------*/
 
+/* Main Header */
+.nav-email{
+    background-color: var(--electricBlue);
+}
+#logo a{
+    color: var(--trueBlue);
+}
+
 /* Welcome Section */
 #intro{
-    background-color: white;
     background-image: url(../Assets/Pattern.svg);
+    color: var(--trueBlue);
     padding: 3rem 0rem;
     border-bottom: 1px solid var(--grey);
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    height: 50vh;
+    max-height: 1000px;
+}
+#intro, #intro-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 #intro img{
     display: none;
@@ -25,12 +47,14 @@ section h2, section h3, section p{
     font-size: 2rem;
     line-height: 2.25rem;
     padding-bottom: 1rem;
+    text-align: center;
 }
 #intro h2{
     max-width: 36.5rem;
 }
 #intro p{
     max-width: 55ch;
+    text-align: center;
 }
 /*----*/
 .email-icon{
@@ -38,21 +62,24 @@ section h2, section h3, section p{
 }
 /*----*/
 #email-cta{
-    color: white;
-    background-color: var(--electricBlue);
+    color: var(--electricBlue);
     padding: 0.5rem 1rem;
     margin: 1.5rem 1rem 0 1rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--links);
+    border: 1px solid var(--electricBlue);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     max-width: max-content;
+    stroke: var(--electricBlue);
 }
 #email-cta:hover, #email-cta:focus{
-    background-color: var(--links);
+    border: 1px solid var(--clickedLinks);
+    text-decoration: underline;
     font-weight: 400;
+    color: var(--clickedLinks);
+    stroke: var(--clickedLinks);
 }
 /* End Welcome Section */
 /*-------------------------------------------------*/
@@ -105,18 +132,6 @@ section h2, section h3, section p{
 
 /* Medium Size Screen Style Adjustments */
 @media screen and (min-width: 600px) {
-    #intro, #intro-info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    #intro{
-        flex-direction: row;
-        padding: 2rem;
-        justify-content: center;
-        height: 300px;
-    }
     /*----*/
     #portfolio{
         margin: 2rem 2rem 0;
@@ -156,20 +171,17 @@ section h2, section h3, section p{
 }
 /*-------------------------------------------------*/
 @media screen and (min-width: 1200px){
-    #intro img{
+    /* #intro img{
         width: 300px;
         height: 300px;
         border-radius: 200px;
         margin-right: 2rem;
         display: block;
     }
-    #intro{
-        height: 400px;
-    }
     #intro-info{
         text-align: left;
         align-items: flex-start;
-    }
+    } */
     #folio-grid{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -179,9 +191,13 @@ section h2, section h3, section p{
     #intro{
         padding: 2rem 0;
     }
+    #main-header{
+        margin: 0 auto;
+    }
     /*----*/
     #portfolio{
-        margin: 2rem 0;
+        margin: 2rem auto;
+        max-width: 1600px;
     }
 }
 /*-------------------------------------------------*/

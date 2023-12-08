@@ -2,7 +2,7 @@
 :root{
     --trueBlue: #02204C;
     --electricBlue: #1485E2;
-    --links: #1171C0;
+    --links: #0C5997;
     --clickedLinks: #0A4B80;
     --darkGrey: #474747;
     --grey: #cecece;
@@ -24,6 +24,9 @@ h4{
     font-weight: 400;
     letter-spacing: 1px;
 }
+h5{
+    padding: 30px 0 10px;
+}
 ol a{
     text-decoration: none;
 }
@@ -32,6 +35,18 @@ ol a:hover, ol a:focus{
 }
 p{
     max-width: 65ch;
+}
+.pdf-link{
+    stroke: var(--links);
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.pdf-link svg{
+    padding-right: 10px;
+}
+.pdf-link:hover, .pdf-link:focus{
+    stroke: var(--clickedLinks);
 }
 /* End Global Styles For Page */
 /*-------------------------------------------------*/
@@ -68,6 +83,7 @@ section{
 .project-link{
     display: block;
     padding: 0.25rem 0;
+    max-width: max-content;
 }
 /* design solution text */
 .explanation{
@@ -132,14 +148,6 @@ h3+p{
 #reflection p{
     margin-bottom: 0.75rem;
     padding-left: 13px;
-}
-.open-file{
-    display: flex;
-    align-items: center;
-    padding-bottom: 0.5rem;
-}
-.open-file svg{
-    padding-right: 10px;
 }
 #top-page{
     margin-top: 2rem;
@@ -207,24 +215,14 @@ h3+p{
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    .wrapper{
+    .wrapper, .text{
         max-width: 60rem;
-    }
-    .text{
-        display: flex;
-        max-width: 60rem;
-        gap: 2rem;
-        align-items: center;
     }
     .left{
         flex-grow: 2;
     }
     .left h1, .left p{
-        max-width: 50ch;
-    }
-    .right{
-        background-color: var(--lightGrey);
-        padding: 2rem;
+        max-width: 60ch;
     }
 }
 /*-------------------------------------------------*/
