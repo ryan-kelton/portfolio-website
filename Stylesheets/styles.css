@@ -295,7 +295,7 @@ footer small{
 /*-------------------------------------------------*/
 
 /* Media Queries */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
     html{
         font-size: 18px;
     }
@@ -346,6 +346,13 @@ footer small{
     }
 }
 /*-------------------------------------------------*/
+@media screen and (min-width: 1615px){
+    footer{
+        border-left: 1px solid var(--grey);
+        border-right: 1px solid var(--grey);
+    }
+}
+/*-------------------------------------------------*/
 @media screen and (min-width: 1700px){
     html{
         font-size: 20px;
@@ -355,10 +362,6 @@ footer small{
     }
     nav{
         padding: 1rem 0rem;
-    }
-    footer{
-        border-left: 1px solid var(--grey);
-        border-right: 1px solid var(--grey);
     }
 }
 /*-------------------------------------------------*/

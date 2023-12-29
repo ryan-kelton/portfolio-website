@@ -64,8 +64,8 @@ section h2, section h3, section p{
 #email-cta{
     color: var(--electricBlue);
     padding: 0.5rem 1rem;
-    margin: 1.5rem 1rem 0 1rem;
     border-radius: 0.5rem;
+    margin: 1rem 0;
     border: 1px solid var(--electricBlue);
     display: flex;
     align-items: center;
@@ -131,7 +131,7 @@ section h2, section h3, section p{
 /*-------------------------------------------------*/
 
 /* Medium Size Screen Style Adjustments */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     /*----*/
     #portfolio{
         margin: 2rem 2rem 0;
