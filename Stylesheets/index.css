@@ -50,7 +50,7 @@ section h2, section h3, section p{
     text-align: center;
 }
 #intro h2{
-    max-width: 36.5rem;
+    max-width: 40rem;
 }
 #intro p{
     max-width: 55ch;
