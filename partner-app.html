@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Ryan Kelton">
-        <meta name="description" content="Responsive website redesign for Suzanne Collins. The focus was to improve usability.">
-        <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
+        <meta name="description" content="Working hand-in-hand with product designers at Starbucks, I facilitated research sessions to identify employee needs we could quickly develop solutions for with an internal mobile app.">
+        <meta name="keywords" content="mobile app design, digital product design, Starbucks, internal app, UX design, UI design, UX research">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio</title>
+        <title>Starbucks Partner App | Ryan Kelton&apos;s Portfolio</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="./Stylesheets/styles.css">
         <link rel="stylesheet" href="./Stylesheets/portfolio.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
-        <link rel="canonical" href="https://www.ryankelton.com/suzanne.html">
+        <link rel="canonical" href="https://www.ryankelton.com/partner-app.html">
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
@@ -23,11 +23,29 @@
         <meta name="twitter:card" content="large_summary_image">
         <meta name="twitter:site" content="@RyanKelton4">
         <!--Open Graph-->
-        <meta property="og:title" content="Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio">
-        <meta property="og:description" content="Responsive website redesign for Suzanne Collins. The focus was to improve usability.">
+        <meta property="og:title" content="Starbucks Partner App | Ryan Kelton&apos;s Portfolio">
+        <meta property="og:description" content="Working hand-in-hand with product designers at Starbucks, I facilitated research sessions to identify employee needs we could quickly develop solutions for with an internal mobile app.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://ryankelton.com/suzanne.html">
-        <meta property="og:image" content="https://ryankelton.com/Suzanne/SC-Hero-1000w.jpeg">
+        <meta property="og:url" content="https://ryankelton.com/partner-app.html">
+        <meta property="og:image:width" content="4000px">
+        <meta property="og:image:height" content="2448px">
+        <meta property="og:image" content="https://ryankelton.com/Partner-App/Cover3.webp">
+
+        <!--Custom page styles-->
+        <style>
+            .explanation ul{
+                list-style: disc;
+                padding-top: 15px;
+                position: relative;
+                left: 20px;
+            }
+            .explanation li{
+                padding-bottom: 8px;
+            }
+            .explanation li:last-of-type{
+                padding-bottom: 0;
+            }
+        </style>
     </head>
     <body id="top">
         <header id="main-header">
@@ -139,173 +157,166 @@
             </a>
             <!--Project Overview-->
             <header id="project-overview" class="section-break">
-                <img src="./Suzanne/SC-Hero-4000w.webp" alt="mobile and desktop website mockup" id="hero-image">
+                <img src="./Partner-App/Cover3.webp" alt="smartphone mockup of the partner app prototype" id="hero-image" style="border: solid 1px lightgrey;">
                 <div class="text">
                     <div class="left">
-                        <h1>Suzanne Collins&apos; Website Redesign</h1>
+                        <h1>Starbucks Partner App</h1>
                         <h2>Project Overview</h2>
                         <!--Description-->
-                        <p>Project Date: 2021</p>
-                        <p>Author of The Hunger Games, Suzanne Collins needed help with her website. After conducting a usability evaluation and site testing, I constructed a working prototype for desktop and mobile devices that solved the user pain points identified in the research.</p>
+                        <p>Project Date: 2023</p>
+                        <p>During my time at the Partner (Employee) Experience Innovation Center at Starbucks, I worked with a team of product designers to improve the usefulness of the Partner App.</p>
+                        <p>The Partner App was built using WorkJam, a digital workforce management tool. WorkJam has a variety of features you can turn on, off, or leverage in creative ways to meet your business and employee goals.</p>
+                        <p>Working hand-in-hand with my team at Starbucks, we conducted three research sessions with Starbucks partners (employees) to identify needs that we could rapidly address within the scope of the WorkJam features.</p>
                     </div>
                     <div class="right">
-                        <!--Links to Prototype-->
-                        <a href="https://xd.adobe.com/view/5b944f19-653f-4cea-b2a4-d299d0aeb6d9-0ec7/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd desktop prototype</a>
-                        <a href="https://xd.adobe.com/view/8c977f10-bb24-483c-a5f4-db8895000368-d9c4/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd mobile prototype</a>
                         <!--Objectives-->
-                        <section>
-                            <h2>Pain points</h2>
+                        <section id="objectives">
+                            <h2>Table of Contents</h2>
                             <ol>
-                                <li><a href="#book-order">Confusing book order</a></li>
-                                <li><a href="#info">Low quality information</a></li>
-                                <li><a href="#buying-book">Difficulty buying a book</a></li>
-                                <li><a href="#scannability">Low scannability</a></li>
+                                <li><a href="#research-obj">Research Objective</a></li>
+                                <li><a href="#process">Our Process</a></li>
+                                <li><a href="#session-1">Research Session #1</a></li>
+                                <li><a href="#session-2">Research Session #2</a></li>
+                                <li><a href="#session-3">Research Session #3</a></li>
+                                <li><a href="#future">Where to Go From Here</a></li>
+                                <li><a href="#reflection">Reflection</a></li>
                             </ol>
                         </section>
                     </div>
                 </div>
             </header>
             <div class="wrapper">
-            <!--Book Order-->
-            <section id="book-order" class="section-break">
-                <h3 class="special">01. Confusing Book Order</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>I organized the books into three categories: The Hunger Games, The Underland Chronicles, and Picture Books. I also included the book number, and publication date with the book title.</p>
+                <!--Research Objective-->
+                <section id="research-obj" class="section-break">
+                    <h3 class="special">Research Objective</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <p>Over the course of 3 research sessions, we sought to identify the partner needs that we could rapidly address within the scope of the WorkJam features.</p>
+                        <img src="./Partner-App/Objective.webp" alt="diagram">
+                        <img src="./Partner-App/Converge.webp" alt="converging over three sessions">
+                    </section>
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-01-Old-600w.jpeg 600w, ./Suzanne/OBJ-01-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-01-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-01-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="original book order on collins' website">
+                <!--Our Process-->
+                <section id="process" class="section-break">
+                    <h3 class="special">Our Process</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <p>We followed an iterative process as we sought to achieve our research objective: build, discuss, revise. Before each session we would build out an idea using user flows, narrative stories, or prototypes to present for discussion with the partners participating in the research. Following each session we would revise our ideas and direction to account for the partner feedback and input. We repeated this process over and over until we achieved our research goal.</p>
+                        <img src="./Partner-App/Process.webp" alt="circular diagram of three steps">
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-01-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-01-New-600w.jpeg 600w, ./Suzanne/OBJ-01-New-1000w.jpeg 1000w, ./Suzanne/OBJ-01-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-01-New-1000w.jpeg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="new organized book order"></a>
-                    </section>
-                </div>      
-            </section>
-            <!--Low Quality Information-->
-            <section id="info" class="section-break">
-                <h3 class="special">02. Low Quality Information</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>Based on user feedback, I added a synopsis and moved the awards below the reviews. Each review now has a link to its source for further reading.</p>
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-02-Old-600w.jpeg 600w, ./Suzanne/OBJ-02-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-02-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-02-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="centered aligned text on a book page">
+                <!--Session #1-->
+                <section id="session-1" class="section-break">
+                    <h3 class="special">Research Session #1</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Objectives:</h4>
+                        <ul>
+                            <li>Introduce the Partner App</li>
+                            <li>Answer Questions</li>
+                            <li>Explore basic use cases</li>
+                        </ul>
+                        <img src="./Partner-App/Session1_Feedback.webp" alt="a board full of sticky notes">
+                        <h4 style="margin-top: 1rem;">Session #1 Feedback:</h4>
+                        <ul>
+                            <li>Respect work-life balance: app must remain optional (“time worked” = “time payed”)</li>
+                            <li>Partners appreciated the knowledge center</li>
+                            <li>Partners are interested in the shift management tool</li>
+                            <li>Partners liked the communication feature</li>
+                        </ul>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-02-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-02-New-600w.jpeg 600w, ./Suzanne/OBJ-02-New-1000w.jpeg 1000w, ./Suzanne/OBJ-02-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-02-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="new organized information on a book page"></a>
-                    </section>
-                </div>
-            </section>
-            <!--Difficulty Buying A Book-->
-            <section id="buying-book" class="section-break">
-                <h3 class="special">03. Difficulty Buying A Book</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>I relocated the “quick links” to the footer and gave primary focus to the Amazon and Barnes and Noble links. These are placed under the synopsis and again under the awards on each book page.</p>
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-03-Old-600w.jpeg 600w, ./Suzanne/OBJ-03-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-03-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-03-Old-1000w.jpeg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="quick links section on the original site">
+                <!--Session #2-->
+                <section id="session-2" class="section-break">
+                    <h3 class="special">Research Session #2</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Objective:</h4>
+                        <p>As we moved into the prep phase for our second research session, we decided to build out a new hire workflow to highlight aspects of the partner app for feedback. For the next two sessions, I led the design and research initiatives.</p>
+                        <a href="./Partner-App/Workflow_Steps.webp"><img src="./Partner-App/Workflow_Steps.webp" alt="five step process diagram" style="margin-top: 1rem;"></a>
+                        <p style="margin-top: 1rem;">After building out the new hire workflow, we presented it to our partners and used it as a jumping off point for discussion. We were looking to identify aspects of the workflow which resonated with the partners.</p>
+                        <a href="./Partner-App/New_Hire_Workflow.webp"><img src="./Partner-App/New_Hire_Workflow.webp" alt="narrative story diagram"></a>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-03-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-03-New-600w.jpeg 600w, ./Suzanne/OBJ-03-New-1000w.jpeg 1000w, ./Suzanne/OBJ-03-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-03-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="links and footer links on the new site"></a>
+                    <section class="explanation">
+                        <h4>New Hire Workflow | Badge Activity</h4>
+                        <p>We also guided the partners through an activity focused on the badge feature. We asked them to tell us how they thought the badge feature should work in the app.</p>
+                        <img src="./Partner-App/Badge_Activity.webp" alt="collection of sticky notes">
+                        <h4 style="margin-top: 1rem;">Badge Activity Summary:</h4>
+                        <ul>
+                            <li>Reward badges for required and optional trainings (e.g., Barista First 30, Coffee Master)</li>
+                            <li>Reward badges for tenure, customer connection, etc.</li>
+                            <li>Badge display case (on app)</li>
+                            <li>Redeem digital badges for real-world rewards (e.g., pins, aprons, PTO, charity donation, etc.)</li>
+                        </ul>
+                        <img src="./Partner-App/Feedback_Zone.webp" alt="digital sticky notes">
+                        <h4 style="margin-top: 1rem;">Session #2 Feedback:</h4>
+                        <ul>
+                            <li>Positive energy around badge feature</li>
+                            <li>Respect work-life balance: app must remain optional (“time worked” = “time payed”)</li>
+                            <li>Partners thought the set-up process involved too many steps</li>
+                        </ul>
                     </section>
-                </div>
-            </section>
-            <!--Low Scannability-->
-            <section id="scannability" class="section-break">
-                <h3 class="special">04. Low Scannability</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>Utilizing varying font weights and indentation I was able to improve the scannability of the information. I also made all of the book titles hyperlinks to improve navigation.</p>
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-04-Old-600w.jpeg 600w, ./Suzanne/OBJ-04-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-04-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-04-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="text with no markup">
+                <!--Session #3-->
+                <section id="session-3" class="section-break">
+                    <h3 class="special">Research Session #3</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Objective:</h4>
+                        <p>As we prepared for the final research session, we identified two main objectives to focus on:</p>
+                        <ul>
+                            <li>To refine & build out a prototype for the new hire workflow</li>
+                            <li>To create 3 distinct directions for the badge feature</li>
+                        </ul>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-04-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-04-New-600w.jpeg 600w, ./Suzanne/OBJ-04-New-1000w.jpeg 1000w, ./Suzanne/OBJ-04-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-04-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="organized text with markup"></a>
+                    <section class="explanation">
+                        <h4>Obj. 1: New Hire Prototype</h4>
+                        <a href="./Partner-App/New_Hire_Prototype.webp"><img src="./Partner-App/New_Hire_Prototype.webp" alt="5 step process diagram"></a>
+                        <p style="margin-top: 1rem;">Up until this point we had been relying on narrative and images to communicate our ideas and workflows. Going into session 3 we wanted to dive deeper into the UI/UX design of the app. Considering this, I created an interactive prototype mocked up in Figma. We used this as our jumping off point for discussion during session 3.</p>
+                        <a href="./Partner-App/New_Hire_Workflow_Screens.webp"><img src="./Partner-App/New_Hire_Workflow_Screens.webp" alt="user flow of 5 screens for the partner app prototype"></a>
+                        <a href="https://youtu.be/-1O12Ed3_qY" style="display: flex; align-items: center; margin-top: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="28" fill="currentColor" style="margin-right: 5px;"><path d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm4.126-6.254l-4.055 2.898c-.905.646-2.13.389-2.737-.576A2.201 2.201 0 0 1 7 12.898V7.102C7 5.942 7.883 5 8.972 5c.391 0 .774.124 1.099.356l4.055 2.898c.905.647 1.146 1.952.54 2.917a2.042 2.042 0 0 1-.54.575zM8.972 7.102v5.796L13.027 10 8.972 7.102z"></path></svg>Watch Prototype Walk Through</a>
                     </section>
-                </div>
-            </section>
-            <!--Extra Files-->
-            <section id="extra-files">
-                <h2>Personas &#38; Wireframes</h2>
-                <a href="./Suzanne/suzanne-personas.pdf" class="pdf-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                        </svg>
-                    Open Personas PDF(254 KB)</a>
-                <a href="./Suzanne/Suzanne-Wireframes.pdf" class="pdf-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                        </svg>
-                    Open Wireframes PDF(2.8MB)</a>
-            </section>
-            <!--Reflection-->
-            <section id="reflection">
-                <h2 class="special">Reflection</h2>
-                <p>This was the first time I did a thorough usability evaluation and I learned a lot through the process. I discovered that you don’t need a large pool of participants to discover user pain points through site testing. I was surprised at how much I learned from watching users interact with the site.</p>
-            </section>
-        </div>
+                    <section class="explanation">
+                        <h4>Obj. 2: Badge Directions</h4>
+                        <p>After reviewing the feedback from the badge activity in session 2, we converged on three main directions to take the feature in.</p>
+                        <ul>
+                            <li>Using badges to award the completion of training, tenure, community service, etc.</li>
+                            <li>Using badges to promote competitions/challenges (e.g., sustainability month)</li>
+                            <li>Using badges to support practice games and quizzes (register, bar, etc.)</li>
+                        </ul>
+                    </section>
+                    <section class="explanation">
+                        <h4>Session #3 Feedback:</h4>
+                        <ul>
+                            <li>Badge direction 1 (original) was clear winner, but more nuanced than originally thought</li>
+                            <li>Negative sentiment around word “tasks”</li>
+                            <li>Positive energy around benefits enrollment task</li>
+                            <li>Partner liked the task addressing first day anxieties</li>
+                            <li>Respect work-life balance: app must remain optional (“time worked” = “time payed”)</li>
+                        </ul>
+                        <img src="./Partner-App/Session3_Feedback.webp" alt="digital sticky notes">
+                    </section>
+                </section>
+                <!--Future-->
+                <section id="future" class="section-break">
+                    <h3 class="special">Where to Go From Here</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <ul>
+                            <li>Move forward with badges, but do not implement a leaderboard. Use the badge feature to allow partners to reflect on their accomplishments.</li>
+                            <li>Build out curated experiences (using the WorkJam task feature) to address first day anxieties and to learn more about Starbucks</li>
+                            <li>Avoid the work “tasks” in the front-end design of the app</li>
+                        </ul>
+                    </section>
+                </section>
+                <!--Reflection-->
+                <section id="reflection">
+                    <h2 class="special">Reflection</h2>
+                    <p>This experience challenged me to take charge and facilitate two research sessions by myself. I had to learn from my mistakes and the advice I received from my co-workers on how to facilitate these research activities.</p>
+                    <p>I also learned how important medium and fidelity is in influencing feedback collected during research. We received different kinds of feedback when we presented a prototype mockup of the app than when we showed the partners narrative workflows.</p>
+                    <p>I also was reminded of just how easy and important regular testing is when designing products of any kind.</p>
+                </section>
+            </div>
             <!--Top of Page Link-->
             <div id="top-page">
                 <a href="#top">Top of Page</a>

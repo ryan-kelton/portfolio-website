@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Ryan Kelton">
-        <meta name="description" content="Responsive website redesign for Suzanne Collins. The focus was to improve usability.">
-        <meta name="keywords" content="html, css, javascript, web design, web development, UX design, UI design, graphic designer, portfolio">
+        <meta name="description" content="As the lead UI/UX designer, I designed and tested a complex web application with over ten features for Demystifyd.">
+        <meta name="keywords" content="web app design, digital product design, Demystifyd, U.S. foreign nationals, UX design, UI design, graphic design, portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio</title>
+        <title>Demystifyd Web App | Ryan Kelton&apos;s Portfolio</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="./Stylesheets/styles.css">
         <link rel="stylesheet" href="./Stylesheets/portfolio.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
-        <link rel="canonical" href="https://www.ryankelton.com/suzanne.html">
+        <link rel="canonical" href="https://www.ryankelton.com/demystifyd.html">
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
@@ -23,11 +23,29 @@
         <meta name="twitter:card" content="large_summary_image">
         <meta name="twitter:site" content="@RyanKelton4">
         <!--Open Graph-->
-        <meta property="og:title" content="Suzanne Collins&apos; Website Redesign | Ryan Kelton&apos;s Portfolio">
-        <meta property="og:description" content="Responsive website redesign for Suzanne Collins. The focus was to improve usability.">
+        <meta property="og:title" content="Demystifyd Web App | Ryan Kelton&apos;s Portfolio">
+        <meta property="og:description" content="As the lead UI/UX designer, I designed and tested a complex web application with over ten features for Demystifyd.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://ryankelton.com/suzanne.html">
-        <meta property="og:image" content="https://ryankelton.com/Suzanne/SC-Hero-1000w.jpeg">
+        <meta property="og:url" content="https://ryankelton.com/demystifyd.html">
+        <meta property="og:image:width" content="4000px">
+        <meta property="og:image:height" content="2448px">
+        <meta property="og:image" content="https://ryankelton.com/Demystifyd/Demystifyd_MockUp.webp">
+
+        <!--Custom page styles-->
+        <style>
+            .explanation ul{
+                list-style: disc;
+                padding-top: 15px;
+                position: relative;
+                left: 20px;
+            }
+            .explanation li{
+                padding-bottom: 8px;
+            }
+            .explanation li:last-of-type{
+                padding-bottom: 0;
+            }
+        </style>
     </head>
     <body id="top">
         <header id="main-header">
@@ -139,173 +157,131 @@
             </a>
             <!--Project Overview-->
             <header id="project-overview" class="section-break">
-                <img src="./Suzanne/SC-Hero-4000w.webp" alt="mobile and desktop website mockup" id="hero-image">
+                <img src="./Demystifyd/Cover_Image2.webp" alt="laptop mockup of the Demystifyd home page" id="hero-image" style="border: solid 1px lightgrey;">
                 <div class="text">
                     <div class="left">
-                        <h1>Suzanne Collins&apos; Website Redesign</h1>
+                        <h1>Demystifyd Web App</h1>
                         <h2>Project Overview</h2>
                         <!--Description-->
-                        <p>Project Date: 2021</p>
-                        <p>Author of The Hunger Games, Suzanne Collins needed help with her website. After conducting a usability evaluation and site testing, I constructed a working prototype for desktop and mobile devices that solved the user pain points identified in the research.</p>
+                        <p>Project Date: 2024</p>
+                        <p>Demystifyd is an online community and mentorship platform for U.S. foreign nationals. It is a platform for international students and professionals living in or planning to move to the United States in their pursuit of personal and professional success.</p>
+                        <p>As a UI/UX designer, I worked hand-in-hand with the CEO of Demystifyd and our development team to bring this vision to life. Together we built a complex web application with over ten features for social networking and professional development and guidance.</p>
+                        <p>After empathizing with the mission and audience of the Demystifyd platform, I conducted market research to better understand our competition. I then began an iterative design process of prototyping and testing our design until we reached an optimal design solution that best served our mission, vision, and customers.</p>
+                        <p>Along with the UI/UX design work, I also contributed my design skills to our marketing campaigns. I produced digital marketing materials including flyers, banners, and promotional motion-graphics.</p>
                     </div>
                     <div class="right">
-                        <!--Links to Prototype-->
-                        <a href="https://xd.adobe.com/view/5b944f19-653f-4cea-b2a4-d299d0aeb6d9-0ec7/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd desktop prototype</a>
-                        <a href="https://xd.adobe.com/view/8c977f10-bb24-483c-a5f4-db8895000368-d9c4/?fullscreen" target="_blank" class="project-link">Link to Adobe Xd mobile prototype</a>
                         <!--Objectives-->
-                        <section>
-                            <h2>Pain points</h2>
+                        <section id="objectives">
+                            <h2>Table of Contents</h2>
                             <ol>
-                                <li><a href="#book-order">Confusing book order</a></li>
-                                <li><a href="#info">Low quality information</a></li>
-                                <li><a href="#buying-book">Difficulty buying a book</a></li>
-                                <li><a href="#scannability">Low scannability</a></li>
+                                <li><a href="#empathize">Empathize</a></li>
+                                <li><a href="#define">Define</a></li>
+                                <li><a href="#prototype">Prototype, Test, Iterate</a></li>
+                                <li><a href="#final">The Finished Design</a></li>
+                                <li><a href="#reflection">Reflection</a></li>
                             </ol>
                         </section>
                     </div>
                 </div>
             </header>
             <div class="wrapper">
-            <!--Book Order-->
-            <section id="book-order" class="section-break">
-                <h3 class="special">01. Confusing Book Order</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>I organized the books into three categories: The Hunger Games, The Underland Chronicles, and Picture Books. I also included the book number, and publication date with the book title.</p>
+                <!--Empathize-->
+                <section id="empathize" class="section-break">
+                    <h3 class="special">Empathize</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <p>Since I am not an international student or professional, it was imperative to empathize with the target audience before designing the platform. I started by listening to the CEO’s immigration journey story. David is a U.S. foreign national who understands what it takes to study abroad and find professional work in the United States. After a few virtual meetings, I began to understand some of the hardships foreign nationals are faced with and how this platform can make that process just a little bit easier.</p>
+                    </section>
+                    <img src="./Demystifyd/Zoom_MockUp.webp" alt="screenshot of a virtual meeting with the CEO of Demystifyd">
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-01-Old-600w.jpeg 600w, ./Suzanne/OBJ-01-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-01-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-01-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="original book order on collins' website">
+                <!-- Define -->
+                <section id="define" class="section-break">
+                    <h3 class="special">Define</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Understanding Demystifyd</h4>
+                        <p>Before I could begin sketching out any ideas and putting together prototypes, I needed to properly define the goals and requirements of the project. In this case, I started first with familiarizing myself with the brand vision and mission of Demystifyd.</p>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-01-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-01-New-600w.jpeg 600w, ./Suzanne/OBJ-01-New-1000w.jpeg 1000w, ./Suzanne/OBJ-01-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-01-New-1000w.jpeg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px" 
-                            alt="new organized book order"></a>
+                    <img src="./Demystifyd/Brand_Mission.webp" alt="Google spreadsheet and document of the brand mission and values of Demystifyd">
+                    <section class="explanation" style="margin-top: 25px;">
+                        <h4>Understanding the Market</h4>
+                        <p>Once I understood what Demystifyd was seeking to accomplish, I talked with David regarding his vision for the platform. Following this I conducted market research to understand what unmet needs Demystifyd might satisfy, and where we could improve upon the existing products and services.</p>
                     </section>
-                </div>      
-            </section>
-            <!--Low Quality Information-->
-            <section id="info" class="section-break">
-                <h3 class="special">02. Low Quality Information</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>Based on user feedback, I added a synopsis and moved the awards below the reviews. Each review now has a link to its source for further reading.</p>
+                    <img src="./Demystifyd/Research.webp" alt="Google documents of the market research for Demystifyd">
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-02-Old-600w.jpeg 600w, ./Suzanne/OBJ-02-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-02-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-02-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="centered aligned text on a book page">
+                <!-- Prototype, Test, Iterate -->
+                <section id="prototype" class="section-break">
+                    <h3 class="special">Prototype, Test, Iterate</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Sketching Out Ideas</h4>
+                        <p>Once I gained a better understanding of the target audience and the market that Demystifyd was after, I began sketching our first wireframes.</p>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-02-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-02-New-600w.jpeg 600w, ./Suzanne/OBJ-02-New-1000w.jpeg 1000w, ./Suzanne/OBJ-02-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-02-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="new organized information on a book page"></a>
+                    <img src="./Demystifyd/Sketches.webp" alt="pencil and paper sketches of the web application">
+                    <section class="explanation">
+                        <h4>Medium Fidelity Prototype</h4>
+                        <p>I then digitized the sketches and created a medium fidelity prototype of the wireframes. We used these prototypes to explore different visual directions and navigation designs.</p>
                     </section>
-                </div>
-            </section>
-            <!--Difficulty Buying A Book-->
-            <section id="buying-book" class="section-break">
-                <h3 class="special">03. Difficulty Buying A Book</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>I relocated the “quick links” to the footer and gave primary focus to the Amazon and Barnes and Noble links. These are placed under the synopsis and again under the awards on each book page.</p>
+                    <img src="./Demystifyd/Mid_Fidelity_Home.webp" alt="medium fidelity wireframes of the home page for the web application" style="border: solid 1px lightgrey;">
+                    <section class="explanation" style="margin-top: 25px;">
+                        <h4>High Fidelity Prototype</h4>
+                        <p>After a few rounds of iteration, we revised these prototypes until we reached an optimal information, interaction, and visual design. From here we were ready to start testing our prototypes.</p>
+                    </section>
+                    <img src="./Demystifyd/Final_Design_Home.webp" alt="mockup of the home page on the Demystifyd platform" style="border: solid 1px lightgrey;">
+                    <section class="explanation" style="margin-top: 25px;">
+                        <h4>Agile Testing</h4>
+                        <p>After conducting some agile user testing, we adjusted a few aspects of the design and began the process of preparing the documents for our development team.</p>
+                    </section>
+                    <img src="./Demystifyd/Agile_Testing.webp" alt="laptop on a white kitchen table with a black notebook next to the computer">
+                    <section class="explanation" style="margin-top: 25px;">
+                        <h4>Handing Off to Development</h4>
+                        <p>Once we were ready for development, I began the process of notating our designs in Figma. These notes explained various interactive states and conditions to our developers.</p>
+                    </section>
+                    <img src="./Demystifyd/Developer_Notes.webp" alt="high fidelity prototype of design with notes for the developers">
+                    <img src="./Demystifyd/Figma_File.webp" alt="screenshot of the Figma design file">
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-03-Old-600w.jpeg 600w, ./Suzanne/OBJ-03-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-03-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-03-Old-1000w.jpeg"
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="quick links section on the original site">
+
+                <!--Finished Design-->
+                <section id="final" class="section-break">
+                    <h3 class="special">The Finished Design</h3>
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>Launching the Platform</h4>
+                        <p>Once our development team masterfully executed our design and the platform was ready for launch, I began working on a promotional video for our advertising campaign. The motion-graphic video was created to communicate some of our most exciting features.</p>
                     </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-03-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-03-New-600w.jpeg 600w, ./Suzanne/OBJ-03-New-1000w.jpeg 1000w, ./Suzanne/OBJ-03-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-03-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="links and footer links on the new site"></a>
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/BvofN3sAd3M?si=tPZDqvg3Pmi1ULiO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <section class="explanation" style="margin-top: 25px;">
+                        <h4>Mockups of Final Design</h4>
+                        <p>The finished design file was well over 200 pages. So rather than trying to showcase all of the exciting features we created, I hope it suffices to show a few of my favorite screens. If you are interested in viewing the Figma file, please email me at <a href="mailto:ryankelton@gmail.com">ryankelton@gmail.com</a></p>
                     </section>
-                </div>
-            </section>
-            <!--Low Scannability-->
-            <section id="scannability" class="section-break">
-                <h3 class="special">04. Low Scannability</h3>
-                <!--Explanation-->
-                <section class="explanation">
-                    <h4>Design Solution</h4>
-                    <p>Utilizing varying font weights and indentation I was able to improve the scannability of the information. I also made all of the book titles hyperlinks to improve navigation.</p>
+                    <div class="image-description">
+                        <a href="./Demystifyd/SignUp_MockUp.webp"><img src="./Demystifyd/SignUp_MockUp.webp" alt="laptop mockup of the sign up screen"></a>
+                        <p>Signing Up For Demystifyd</p>
+                    </div>
+                    <div class="image-description">
+                        <a href="./Demystifyd/Profile_MockUp.webp"><img src="./Demystifyd/Profile_MockUp.webp" alt="laptop mockup of the user profile screen"></a>
+                        <p>Viewing a User's Account</p>
+                    </div>
+                    <div class="image-description">
+                        <a href="./Demystifyd/Groups_MockUp.webp"><img src="./Demystifyd/Groups_MockUp.webp" alt="laptop mockup of the groups screen"></a>
+                        <p>Choosing a Group</p>
+                    </div>
+                    <div class="image-description">
+                        <a href="./Demystifyd/Mentor_MockUp.webp"><img src="./Demystifyd/Mentor_MockUp.webp" alt="laptop mockup of the mentor screen"></a>
+                        <p>Booking A Mentor</p>
+                    </div>
+                    <div class="image-description">
+                        <a href="./Demystifyd/SpeedChats_MockUp.webp"><img src="./Demystifyd/SpeedChats_MockUp.webp" alt="laptop mockup of the Speed Chats screen"></a>
+                        <p>Registering for Speed Chats</p>
+                    </div>         
                 </section>
-                <div class="image-grid">
-                    <!--Original Design-->
-                    <section>
-                        <h4>Original Design</h4>
-                        <img 
-                            srcset="./Suzanne/OBJ-04-Old-600w.jpeg 600w, ./Suzanne/OBJ-04-Old-1000w.jpeg 1000w, ./Suzanne/OBJ-04-Old-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-04-Old-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="text with no markup">
-                    </section>
-                    <!--New Design-->
-                    <section>
-                        <h4>New Design</h4>
-                        <a href="./Suzanne/OBJ-04-New-1500w.jpeg"><img 
-                            srcset="./Suzanne/OBJ-04-New-600w.jpeg 600w, ./Suzanne/OBJ-04-New-1000w.jpeg 1000w, ./Suzanne/OBJ-04-New-1500w.jpeg 1500w"
-                            src="./Suzanne/OBJ-04-New-1000w.jpeg" 
-                            sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 1500px"
-                            alt="organized text with markup"></a>
-                    </section>
-                </div>
-            </section>
-            <!--Extra Files-->
-            <section id="extra-files">
-                <h2>Personas &#38; Wireframes</h2>
-                <a href="./Suzanne/suzanne-personas.pdf" class="pdf-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                        </svg>
-                    Open Personas PDF(254 KB)</a>
-                <a href="./Suzanne/Suzanne-Wireframes.pdf" class="pdf-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-                        <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-                        </svg>
-                    Open Wireframes PDF(2.8MB)</a>
-            </section>
-            <!--Reflection-->
-            <section id="reflection">
-                <h2 class="special">Reflection</h2>
-                <p>This was the first time I did a thorough usability evaluation and I learned a lot through the process. I discovered that you don’t need a large pool of participants to discover user pain points through site testing. I was surprised at how much I learned from watching users interact with the site.</p>
-            </section>
-        </div>
+                
+                <!--Reflection-->
+                <section id="reflection">
+                    <h2 class="special">Reflection</h2>
+                    <p>I am tremendously proud of the platform we created at Demystifyd for the international community. This opportunity gave me a chance to utilize my design skills to help build a product that enriches the lives of others. While there were many ups and downs throughout the design and development process, overall I look back on the work with a great sense of achievement. I also look forward with excitement to see the great impact Demystifyd will make on this community.</p>
+                </section>
+            </div>
             <!--Top of Page Link-->
             <div id="top-page">
                 <a href="#top">Top of Page</a>
