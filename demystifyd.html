@@ -14,6 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet"> 
         <link rel="canonical" href="https://www.ryankelton.com/demystifyd.html">
+        <!-- Animations -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!--Favicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
@@ -146,7 +150,7 @@
         </header>
         <main id="main-content">
             <!--Internal Back Button-->
-            <a href="index.html#portfolio" id="back">
+            <a href="index.html#portfolio" id="back" class="animate__animated animate__fadeIn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -156,8 +160,8 @@
                 Back
             </a>
             <!--Project Overview-->
-            <header id="project-overview" class="section-break">
-                <img src="./Demystifyd/Cover_Image2.webp" alt="laptop mockup of the Demystifyd home page" id="hero-image" style="border: solid 1px lightgrey;">
+            <header id="project-overview" class="section-break animate__animated animate__fadeIn">
+                <img src="./Demystifyd/Cover_Image2.webp" alt="laptop mockup of the Demystifyd home page" id="hero-image" style="border: solid 1px lightgrey;" >
                 <div class="text">
                     <div class="left">
                         <h1>Demystifyd Web App</h1>
@@ -176,7 +180,8 @@
                             <ol>
                                 <li><a href="#empathize">Empathize</a></li>
                                 <li><a href="#define">Define</a></li>
-                                <li><a href="#prototype">Prototype, Test, Iterate</a></li>
+                                <li><a href="#prototype">Prototype</a></li>
+                                <li><a href="#test">Test</a></li>
                                 <li><a href="#final">The Finished Design</a></li>
                                 <li><a href="#reflection">Reflection</a></li>
                             </ol>
@@ -209,9 +214,9 @@
                     </section>
                     <img src="./Demystifyd/Research.webp" alt="Google documents of the market research for Demystifyd">
                 </section>
-                <!-- Prototype, Test, Iterate -->
+                <!-- Prototype -->
                 <section id="prototype" class="section-break">
-                    <h3 class="special">Prototype, Test, Iterate</h3>
+                    <h3 class="special">Prototype</h3>
                     <!--Explanation-->
                     <section class="explanation">
                         <h4>Sketching Out Ideas</h4>
@@ -239,6 +244,28 @@
                     </section>
                     <img src="./Demystifyd/Developer_Notes.webp" alt="high fidelity prototype of design with notes for the developers">
                     <img src="./Demystifyd/Figma_File.webp" alt="screenshot of the Figma design file">
+                </section>
+
+                <!-- Test -->
+                <section id="test" class="section-break">
+                    <h3 class="special">Test</h3>
+                    <img src="./Demystifyd/User_Testing.webp" alt="observation sheets from the user testing">
+                    <!--Explanation-->
+                    <section class="explanation">
+                        <h4>User Testing</h4>
+                        <p>Before we started to market the platform, we needed to test the usability and usefulness of the web application to catch any bugs or issues with the design.</p> </br>
+                        <p>Over the course of a few weeks, I moderated 7 usability tests with international students. In total, 9 usability issues were identified and ranked by severity. In addition to the identification of the issues, 9 solutions were proposed to improve the UX of the platform.</p>
+                        <p style="margin-top: 1rem;"><b>Key Issues Identified:</b></p>
+                        <ul>
+                            <li>Over <b>50%</b> of the participants who posted to the “General” group had trouble finding it and one participant gave up looking for it.</li>
+                            <li>Over <b>70%</b> of the participants were not able to post to the “Tech Professionals” group. For some unidentified reason, the “post to group” button was not working for these participants.</li>
+                            <li>Over <b>85%</b> of the participants were confused by the premium membership offer during the mentorship checkout flow. Many of them thought a premium membership was required to book the call.</li>
+                            <li>One participant was not able to create an account due to an issue with the phone verification system.</li>
+                            <li>The “Connections” countdown timer was not working as intended, in-fact it only worked for one participant.</li>
+                        </ul>
+                    </section>        
+                </section>
+                    
                 </section>
 
                 <!--Finished Design-->
